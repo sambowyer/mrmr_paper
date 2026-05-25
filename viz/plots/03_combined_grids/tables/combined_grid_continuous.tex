@@ -1,0 +1,194 @@
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+\setlength{\LTleft}{\fill}
+\setlength{\LTright}{\fill}
+\begin{longtable}{llp{0.2\textwidth}rrrrr}
+\caption{Combined grid table for continuous datasets}\label{tab:combined\_grid\_continuous}\\
+\toprule
+$n$ & $M$ & Method & RMSE & MAE & Kendall $\tau$ & Spearman $\rho$ & Pearson $r$ \\
+\midrule
+\endfirsthead
+\toprule
+$n$ & $M$ & Method & RMSE & MAE & Kendall $\tau$ & Spearman $\rho$ & Pearson $r$ \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{\emph{Continued on next page}} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+5\% & 16 & Random & \textbf{0.5339} {\scriptsize $\pm$ 0.25} & \textbf{0.3613} {\scriptsize $\pm$ 0.19} & 0.8646 {\scriptsize $\pm$ 0.015} & 0.9564 {\scriptsize $\pm$ 0.011} & 0.9657 {\scriptsize $\pm$ 0.014} \\
+ &  & Random+ & 0.7546 {\scriptsize $\pm$ 0.34} & 0.5630 {\scriptsize $\pm$ 0.20} & 0.8406 {\scriptsize $\pm$ 0.024} & 0.9393 {\scriptsize $\pm$ 0.022} & 0.9478 {\scriptsize $\pm$ 0.028} \\
+ &  & Random++ & 0.7647 {\scriptsize $\pm$ 0.31} & 0.5595 {\scriptsize $\pm$ 0.22} & 0.8623 {\scriptsize $\pm$ 0.012} & 0.9567 {\scriptsize $\pm$ 0.0091} & 0.9681 {\scriptsize $\pm$ 0.012} \\
+ &  & Search+ & 0.7542 {\scriptsize $\pm$ 0.38} & 0.5549 {\scriptsize $\pm$ 0.24} & 0.8538 {\scriptsize $\pm$ 0.015} & 0.9590 {\scriptsize $\pm$ 0.0077} & 0.9688 {\scriptsize $\pm$ 0.0077} \\
+ &  & Search++ & 0.7515 {\scriptsize $\pm$ 0.34} & 0.5544 {\scriptsize $\pm$ 0.26} & 0.8563 {\scriptsize $\pm$ 0.0100} & 0.9534 {\scriptsize $\pm$ 0.010} & 0.9681 {\scriptsize $\pm$ 0.0099} \\
+ &  & AnchorPts & 0.6622 {\scriptsize $\pm$ 0.35} & 0.4614 {\scriptsize $\pm$ 0.22} & \underline{0.8677} {\scriptsize $\pm$ 0.0094} & 0.9641 {\scriptsize $\pm$ 0.0050} & 0.9727 {\scriptsize $\pm$ 0.0051} \\
+ &  & AnchorPts Pred. & 0.7660 {\scriptsize $\pm$ 0.38} & 0.5692 {\scriptsize $\pm$ 0.25} & 0.8599 {\scriptsize $\pm$ 0.011} & 0.9609 {\scriptsize $\pm$ 0.0065} & 0.9655 {\scriptsize $\pm$ 0.0098} \\
+ &  & AnchorPts+ & 0.8769 {\scriptsize $\pm$ 0.43} & 0.6585 {\scriptsize $\pm$ 0.26} & 0.8522 {\scriptsize $\pm$ 0.014} & 0.9604 {\scriptsize $\pm$ 0.0058} & 0.9580 {\scriptsize $\pm$ 0.013} \\
+ &  & AnchorPts++ & 0.7686 {\scriptsize $\pm$ 0.38} & 0.5693 {\scriptsize $\pm$ 0.28} & \textbf{0.8756} {\scriptsize $\pm$ 0.0077} & \textbf{0.9698} {\scriptsize $\pm$ 0.0034} & 0.9746 {\scriptsize $\pm$ 0.0054} \\
+ &  & Lasso & 1.5142 {\scriptsize $\pm$ 0.52} & 1.1818 {\scriptsize $\pm$ 0.36} & 0.5822 {\scriptsize $\pm$ 0.081} & 0.7102 {\scriptsize $\pm$ 0.095} & 0.7315 {\scriptsize $\pm$ 0.096} \\
+ &  & $\beta$ p-IRT & 2.1584 {\scriptsize $\pm$ 0.58} & 2.0027 {\scriptsize $\pm$ 0.58} & 0.8413 {\scriptsize $\pm$ 0.029} & 0.9435 {\scriptsize $\pm$ 0.021} & 0.9312 {\scriptsize $\pm$ 0.043} \\
+ &  & $\beta$ p-IRT+ & 0.7518 {\scriptsize $\pm$ 0.38} & 0.5613 {\scriptsize $\pm$ 0.24} & 0.8499 {\scriptsize $\pm$ 0.022} & 0.9521 {\scriptsize $\pm$ 0.013} & 0.9656 {\scriptsize $\pm$ 0.013} \\
+ &  & $\beta$ p-IRT++ & 0.7306 {\scriptsize $\pm$ 0.34} & 0.5489 {\scriptsize $\pm$ 0.26} & 0.8641 {\scriptsize $\pm$ 0.017} & 0.9608 {\scriptsize $\pm$ 0.010} & \textbf{0.9779} {\scriptsize $\pm$ 0.0049} \\
+ &  & $\beta$ gp-IRT & \underline{0.5968} {\scriptsize $\pm$ 0.29} & \underline{0.3849} {\scriptsize $\pm$ 0.21} & 0.8528 {\scriptsize $\pm$ 0.027} & 0.9509 {\scriptsize $\pm$ 0.019} & 0.9691 {\scriptsize $\pm$ 0.012} \\
+ &  & $\beta$ gp-IRT+ & 0.7518 {\scriptsize $\pm$ 0.38} & 0.5613 {\scriptsize $\pm$ 0.24} & 0.8499 {\scriptsize $\pm$ 0.022} & 0.9521 {\scriptsize $\pm$ 0.013} & 0.9656 {\scriptsize $\pm$ 0.013} \\
+ &  & $\beta$ gp-IRT++ & 0.7306 {\scriptsize $\pm$ 0.34} & 0.5489 {\scriptsize $\pm$ 0.26} & 0.8641 {\scriptsize $\pm$ 0.017} & 0.9608 {\scriptsize $\pm$ 0.010} & \underline{0.9779} {\scriptsize $\pm$ 0.0049} \\
+ &  & mRMR+ & 0.8099 {\scriptsize $\pm$ 0.45} & 0.6034 {\scriptsize $\pm$ 0.28} & 0.8535 {\scriptsize $\pm$ 0.016} & 0.9590 {\scriptsize $\pm$ 0.0073} & 0.9429 {\scriptsize $\pm$ 0.028} \\
+ &  & mRMR++ & 0.7818 {\scriptsize $\pm$ 0.41} & 0.5789 {\scriptsize $\pm$ 0.29} & 0.8660 {\scriptsize $\pm$ 0.011} & \underline{0.9645} {\scriptsize $\pm$ 0.0051} & 0.9753 {\scriptsize $\pm$ 0.0050} \\
+\midrule
+5\% & 32 & Random & 0.5472 {\scriptsize $\pm$ 0.25} & 0.3675 {\scriptsize $\pm$ 0.19} & 0.8629 {\scriptsize $\pm$ 0.015} & 0.9559 {\scriptsize $\pm$ 0.011} & 0.9659 {\scriptsize $\pm$ 0.014} \\
+ &  & Random+ & 0.5282 {\scriptsize $\pm$ 0.28} & 0.3526 {\scriptsize $\pm$ 0.17} & 0.8703 {\scriptsize $\pm$ 0.013} & 0.9638 {\scriptsize $\pm$ 0.0080} & 0.9772 {\scriptsize $\pm$ 0.0098} \\
+ &  & Random++ & 0.5604 {\scriptsize $\pm$ 0.24} & 0.3713 {\scriptsize $\pm$ 0.15} & 0.8674 {\scriptsize $\pm$ 0.011} & 0.9597 {\scriptsize $\pm$ 0.0089} & 0.9715 {\scriptsize $\pm$ 0.012} \\
+ &  & Search+ & \textbf{0.5029} {\scriptsize $\pm$ 0.25} & \underline{0.3411} {\scriptsize $\pm$ 0.16} & 0.8779 {\scriptsize $\pm$ 0.014} & 0.9677 {\scriptsize $\pm$ 0.0073} & 0.9820 {\scriptsize $\pm$ 0.0061} \\
+ &  & Search++ & \underline{0.5037} {\scriptsize $\pm$ 0.18} & \textbf{0.3397} {\scriptsize $\pm$ 0.13} & \textbf{0.8893} {\scriptsize $\pm$ 0.0082} & 0.9747 {\scriptsize $\pm$ 0.0051} & 0.9811 {\scriptsize $\pm$ 0.0077} \\
+ &  & AnchorPts & 0.5512 {\scriptsize $\pm$ 0.21} & 0.4047 {\scriptsize $\pm$ 0.15} & 0.8806 {\scriptsize $\pm$ 0.0083} & 0.9731 {\scriptsize $\pm$ 0.0035} & 0.9835 {\scriptsize $\pm$ 0.0028} \\
+ &  & AnchorPts Pred. & 0.5920 {\scriptsize $\pm$ 0.26} & 0.4405 {\scriptsize $\pm$ 0.17} & 0.8842 {\scriptsize $\pm$ 0.0078} & 0.9749 {\scriptsize $\pm$ 0.0031} & 0.9809 {\scriptsize $\pm$ 0.0049} \\
+ &  & AnchorPts+ & 0.5426 {\scriptsize $\pm$ 0.27} & 0.3960 {\scriptsize $\pm$ 0.17} & \underline{0.8878} {\scriptsize $\pm$ 0.0072} & \underline{0.9756} {\scriptsize $\pm$ 0.0032} & \underline{0.9836} {\scriptsize $\pm$ 0.0036} \\
+ &  & AnchorPts++ & 0.5231 {\scriptsize $\pm$ 0.26} & 0.3762 {\scriptsize $\pm$ 0.17} & 0.8875 {\scriptsize $\pm$ 0.0055} & \textbf{0.9761} {\scriptsize $\pm$ 0.0029} & \textbf{0.9851} {\scriptsize $\pm$ 0.0022} \\
+ &  & Lasso & 1.1264 {\scriptsize $\pm$ 0.27} & 0.8772 {\scriptsize $\pm$ 0.15} & 0.7635 {\scriptsize $\pm$ 0.034} & 0.8950 {\scriptsize $\pm$ 0.028} & 0.8841 {\scriptsize $\pm$ 0.049} \\
+ &  & $\beta$ p-IRT & 2.1687 {\scriptsize $\pm$ 0.55} & 1.9588 {\scriptsize $\pm$ 0.53} & 0.8269 {\scriptsize $\pm$ 0.032} & 0.9315 {\scriptsize $\pm$ 0.022} & 0.9100 {\scriptsize $\pm$ 0.049} \\
+ &  & $\beta$ p-IRT+ & 0.5695 {\scriptsize $\pm$ 0.28} & 0.4093 {\scriptsize $\pm$ 0.18} & 0.8657 {\scriptsize $\pm$ 0.018} & 0.9611 {\scriptsize $\pm$ 0.011} & 0.9767 {\scriptsize $\pm$ 0.0094} \\
+ &  & $\beta$ p-IRT++ & 0.5219 {\scriptsize $\pm$ 0.24} & 0.3780 {\scriptsize $\pm$ 0.17} & 0.8673 {\scriptsize $\pm$ 0.014} & 0.9615 {\scriptsize $\pm$ 0.0080} & 0.9820 {\scriptsize $\pm$ 0.0038} \\
+ &  & $\beta$ gp-IRT & 0.5705 {\scriptsize $\pm$ 0.23} & 0.4023 {\scriptsize $\pm$ 0.18} & 0.8448 {\scriptsize $\pm$ 0.027} & 0.9450 {\scriptsize $\pm$ 0.018} & 0.9704 {\scriptsize $\pm$ 0.0085} \\
+ &  & $\beta$ gp-IRT+ & 0.5695 {\scriptsize $\pm$ 0.28} & 0.4093 {\scriptsize $\pm$ 0.18} & 0.8657 {\scriptsize $\pm$ 0.018} & 0.9611 {\scriptsize $\pm$ 0.011} & 0.9767 {\scriptsize $\pm$ 0.0094} \\
+ &  & $\beta$ gp-IRT++ & 0.5219 {\scriptsize $\pm$ 0.24} & 0.3780 {\scriptsize $\pm$ 0.17} & 0.8673 {\scriptsize $\pm$ 0.014} & 0.9615 {\scriptsize $\pm$ 0.0080} & 0.9820 {\scriptsize $\pm$ 0.0038} \\
+ &  & mRMR+ & 0.5693 {\scriptsize $\pm$ 0.28} & 0.3711 {\scriptsize $\pm$ 0.16} & 0.8869 {\scriptsize $\pm$ 0.0086} & 0.9746 {\scriptsize $\pm$ 0.0032} & 0.9730 {\scriptsize $\pm$ 0.013} \\
+ &  & mRMR++ & 0.5751 {\scriptsize $\pm$ 0.24} & 0.3718 {\scriptsize $\pm$ 0.15} & 0.8825 {\scriptsize $\pm$ 0.0060} & 0.9738 {\scriptsize $\pm$ 0.0024} & 0.9726 {\scriptsize $\pm$ 0.012} \\
+\midrule
+5\% & 52 & Random & 0.5479 {\scriptsize $\pm$ 0.22} & 0.3721 {\scriptsize $\pm$ 0.17} & 0.8632 {\scriptsize $\pm$ 0.015} & 0.9561 {\scriptsize $\pm$ 0.011} & 0.9658 {\scriptsize $\pm$ 0.014} \\
+ &  & Random+ & 0.5003 {\scriptsize $\pm$ 0.22} & 0.3272 {\scriptsize $\pm$ 0.15} & 0.8880 {\scriptsize $\pm$ 0.013} & 0.9712 {\scriptsize $\pm$ 0.0072} & 0.9823 {\scriptsize $\pm$ 0.0089} \\
+ &  & Random++ & 0.4932 {\scriptsize $\pm$ 0.20} & 0.3314 {\scriptsize $\pm$ 0.13} & 0.8812 {\scriptsize $\pm$ 0.011} & 0.9673 {\scriptsize $\pm$ 0.0092} & 0.9771 {\scriptsize $\pm$ 0.012} \\
+ &  & Search+ & \underline{0.4460} {\scriptsize $\pm$ 0.18} & \textbf{0.2894} {\scriptsize $\pm$ 0.12} & 0.9024 {\scriptsize $\pm$ 0.0077} & 0.9771 {\scriptsize $\pm$ 0.0043} & \underline{0.9874} {\scriptsize $\pm$ 0.0056} \\
+ &  & Search++ & \textbf{0.4200} {\scriptsize $\pm$ 0.19} & \underline{0.2948} {\scriptsize $\pm$ 0.13} & 0.8998 {\scriptsize $\pm$ 0.0064} & 0.9793 {\scriptsize $\pm$ 0.0030} & \textbf{0.9897} {\scriptsize $\pm$ 0.0027} \\
+ &  & AnchorPts & 0.7106 {\scriptsize $\pm$ 0.27} & 0.4625 {\scriptsize $\pm$ 0.17} & 0.8978 {\scriptsize $\pm$ 0.0082} & 0.9783 {\scriptsize $\pm$ 0.0037} & 0.9822 {\scriptsize $\pm$ 0.0080} \\
+ &  & AnchorPts Pred. & 0.5703 {\scriptsize $\pm$ 0.17} & 0.4036 {\scriptsize $\pm$ 0.12} & 0.9023 {\scriptsize $\pm$ 0.0081} & 0.9807 {\scriptsize $\pm$ 0.0033} & 0.9812 {\scriptsize $\pm$ 0.0089} \\
+ &  & AnchorPts+ & 0.4948 {\scriptsize $\pm$ 0.21} & 0.3320 {\scriptsize $\pm$ 0.13} & \textbf{0.9103} {\scriptsize $\pm$ 0.0085} & \underline{0.9820} {\scriptsize $\pm$ 0.0035} & 0.9861 {\scriptsize $\pm$ 0.0070} \\
+ &  & AnchorPts++ & 0.4831 {\scriptsize $\pm$ 0.19} & 0.3181 {\scriptsize $\pm$ 0.12} & \underline{0.9073} {\scriptsize $\pm$ 0.0061} & \textbf{0.9825} {\scriptsize $\pm$ 0.0026} & 0.9864 {\scriptsize $\pm$ 0.0062} \\
+ &  & Lasso & 1.0723 {\scriptsize $\pm$ 0.14} & 0.8389 {\scriptsize $\pm$ 0.083} & 0.8088 {\scriptsize $\pm$ 0.038} & 0.9265 {\scriptsize $\pm$ 0.024} & 0.8791 {\scriptsize $\pm$ 0.075} \\
+ &  & $\beta$ p-IRT & 1.9260 {\scriptsize $\pm$ 0.52} & 1.8222 {\scriptsize $\pm$ 0.52} & 0.8462 {\scriptsize $\pm$ 0.024} & 0.9438 {\scriptsize $\pm$ 0.018} & 0.9313 {\scriptsize $\pm$ 0.047} \\
+ &  & $\beta$ p-IRT+ & 0.5232 {\scriptsize $\pm$ 0.25} & 0.3397 {\scriptsize $\pm$ 0.17} & 0.8872 {\scriptsize $\pm$ 0.014} & 0.9688 {\scriptsize $\pm$ 0.0077} & 0.9807 {\scriptsize $\pm$ 0.010} \\
+ &  & $\beta$ p-IRT++ & 0.5055 {\scriptsize $\pm$ 0.22} & 0.3347 {\scriptsize $\pm$ 0.15} & 0.8851 {\scriptsize $\pm$ 0.011} & 0.9705 {\scriptsize $\pm$ 0.0063} & 0.9818 {\scriptsize $\pm$ 0.0081} \\
+ &  & $\beta$ gp-IRT & 0.5420 {\scriptsize $\pm$ 0.21} & 0.3723 {\scriptsize $\pm$ 0.15} & 0.8572 {\scriptsize $\pm$ 0.020} & 0.9553 {\scriptsize $\pm$ 0.013} & 0.9725 {\scriptsize $\pm$ 0.011} \\
+ &  & $\beta$ gp-IRT+ & 0.5232 {\scriptsize $\pm$ 0.25} & 0.3397 {\scriptsize $\pm$ 0.17} & 0.8872 {\scriptsize $\pm$ 0.014} & 0.9688 {\scriptsize $\pm$ 0.0077} & 0.9807 {\scriptsize $\pm$ 0.010} \\
+ &  & $\beta$ gp-IRT++ & 0.5055 {\scriptsize $\pm$ 0.22} & 0.3347 {\scriptsize $\pm$ 0.15} & 0.8851 {\scriptsize $\pm$ 0.011} & 0.9705 {\scriptsize $\pm$ 0.0063} & 0.9818 {\scriptsize $\pm$ 0.0081} \\
+ &  & mRMR+ & 0.5806 {\scriptsize $\pm$ 0.22} & 0.3613 {\scriptsize $\pm$ 0.14} & 0.9010 {\scriptsize $\pm$ 0.011} & 0.9804 {\scriptsize $\pm$ 0.0045} & 0.9774 {\scriptsize $\pm$ 0.014} \\
+ &  & mRMR++ & 0.5863 {\scriptsize $\pm$ 0.20} & 0.3634 {\scriptsize $\pm$ 0.13} & 0.8955 {\scriptsize $\pm$ 0.0089} & 0.9792 {\scriptsize $\pm$ 0.0038} & 0.9733 {\scriptsize $\pm$ 0.016} \\
+\midrule
+10\% & 16 & Random & \textbf{0.3843} {\scriptsize $\pm$ 0.17} & \textbf{0.2517} {\scriptsize $\pm$ 0.13} & 0.8982 {\scriptsize $\pm$ 0.011} & 0.9756 {\scriptsize $\pm$ 0.0058} & 0.9827 {\scriptsize $\pm$ 0.0076} \\
+ &  & Random+ & 0.6444 {\scriptsize $\pm$ 0.33} & 0.4664 {\scriptsize $\pm$ 0.20} & 0.8910 {\scriptsize $\pm$ 0.012} & 0.9735 {\scriptsize $\pm$ 0.0057} & 0.9740 {\scriptsize $\pm$ 0.012} \\
+ &  & Random++ & 0.6746 {\scriptsize $\pm$ 0.31} & 0.4929 {\scriptsize $\pm$ 0.23} & \textbf{0.9003} {\scriptsize $\pm$ 0.0091} & \textbf{0.9788} {\scriptsize $\pm$ 0.0031} & \underline{0.9842} {\scriptsize $\pm$ 0.0047} \\
+ &  & Search+ & 0.6188 {\scriptsize $\pm$ 0.29} & 0.4518 {\scriptsize $\pm$ 0.17} & 0.8966 {\scriptsize $\pm$ 0.010} & 0.9783 {\scriptsize $\pm$ 0.0040} & 0.9799 {\scriptsize $\pm$ 0.0071} \\
+ &  & Search++ & 0.6602 {\scriptsize $\pm$ 0.32} & 0.4860 {\scriptsize $\pm$ 0.23} & 0.8965 {\scriptsize $\pm$ 0.0071} & 0.9742 {\scriptsize $\pm$ 0.0053} & 0.9830 {\scriptsize $\pm$ 0.0044} \\
+ &  & AnchorPts & 0.4835 {\scriptsize $\pm$ 0.22} & 0.3270 {\scriptsize $\pm$ 0.14} & \underline{0.8990} {\scriptsize $\pm$ 0.0069} & \underline{0.9783} {\scriptsize $\pm$ 0.0042} & 0.9839 {\scriptsize $\pm$ 0.0033} \\
+ &  & AnchorPts Pred. & 0.6821 {\scriptsize $\pm$ 0.39} & 0.5107 {\scriptsize $\pm$ 0.26} & 0.8770 {\scriptsize $\pm$ 0.015} & 0.9666 {\scriptsize $\pm$ 0.0089} & 0.9762 {\scriptsize $\pm$ 0.0061} \\
+ &  & AnchorPts+ & 0.8056 {\scriptsize $\pm$ 0.47} & 0.5968 {\scriptsize $\pm$ 0.28} & 0.8734 {\scriptsize $\pm$ 0.016} & 0.9696 {\scriptsize $\pm$ 0.0063} & 0.9656 {\scriptsize $\pm$ 0.012} \\
+ &  & AnchorPts++ & 0.7537 {\scriptsize $\pm$ 0.41} & 0.5661 {\scriptsize $\pm$ 0.30} & 0.8925 {\scriptsize $\pm$ 0.0084} & 0.9764 {\scriptsize $\pm$ 0.0034} & 0.9791 {\scriptsize $\pm$ 0.0047} \\
+ &  & Lasso & 1.5105 {\scriptsize $\pm$ 0.52} & 1.1800 {\scriptsize $\pm$ 0.36} & 0.5831 {\scriptsize $\pm$ 0.081} & 0.7113 {\scriptsize $\pm$ 0.095} & 0.7319 {\scriptsize $\pm$ 0.096} \\
+ &  & $\beta$ p-IRT & 2.0459 {\scriptsize $\pm$ 0.61} & 1.9130 {\scriptsize $\pm$ 0.61} & 0.8793 {\scriptsize $\pm$ 0.019} & 0.9614 {\scriptsize $\pm$ 0.011} & 0.9430 {\scriptsize $\pm$ 0.033} \\
+ &  & $\beta$ p-IRT+ & 0.7284 {\scriptsize $\pm$ 0.37} & 0.5352 {\scriptsize $\pm$ 0.22} & 0.8847 {\scriptsize $\pm$ 0.014} & 0.9715 {\scriptsize $\pm$ 0.0065} & 0.9630 {\scriptsize $\pm$ 0.019} \\
+ &  & $\beta$ p-IRT++ & 0.6923 {\scriptsize $\pm$ 0.32} & 0.5116 {\scriptsize $\pm$ 0.23} & 0.8954 {\scriptsize $\pm$ 0.0096} & 0.9749 {\scriptsize $\pm$ 0.0055} & 0.9838 {\scriptsize $\pm$ 0.0054} \\
+ &  & $\beta$ gp-IRT & \underline{0.4070} {\scriptsize $\pm$ 0.15} & \underline{0.2618} {\scriptsize $\pm$ 0.13} & 0.8884 {\scriptsize $\pm$ 0.016} & 0.9702 {\scriptsize $\pm$ 0.0088} & 0.9797 {\scriptsize $\pm$ 0.011} \\
+ &  & $\beta$ gp-IRT+ & 0.7284 {\scriptsize $\pm$ 0.37} & 0.5352 {\scriptsize $\pm$ 0.22} & 0.8847 {\scriptsize $\pm$ 0.014} & 0.9715 {\scriptsize $\pm$ 0.0065} & 0.9630 {\scriptsize $\pm$ 0.019} \\
+ &  & $\beta$ gp-IRT++ & 0.6923 {\scriptsize $\pm$ 0.32} & 0.5116 {\scriptsize $\pm$ 0.23} & 0.8954 {\scriptsize $\pm$ 0.0096} & 0.9749 {\scriptsize $\pm$ 0.0055} & 0.9838 {\scriptsize $\pm$ 0.0054} \\
+ &  & mRMR+ & 0.6979 {\scriptsize $\pm$ 0.40} & 0.5180 {\scriptsize $\pm$ 0.24} & 0.8810 {\scriptsize $\pm$ 0.016} & 0.9714 {\scriptsize $\pm$ 0.0064} & 0.9659 {\scriptsize $\pm$ 0.017} \\
+ &  & mRMR++ & 0.6946 {\scriptsize $\pm$ 0.37} & 0.5297 {\scriptsize $\pm$ 0.26} & 0.8961 {\scriptsize $\pm$ 0.0082} & 0.9780 {\scriptsize $\pm$ 0.0032} & \textbf{0.9860} {\scriptsize $\pm$ 0.0027} \\
+\midrule
+10\% & 32 & Random & 0.3880 {\scriptsize $\pm$ 0.17} & \textbf{0.2506} {\scriptsize $\pm$ 0.12} & 0.8968 {\scriptsize $\pm$ 0.011} & 0.9751 {\scriptsize $\pm$ 0.0057} & 0.9828 {\scriptsize $\pm$ 0.0076} \\
+ &  & Random+ & 0.4251 {\scriptsize $\pm$ 0.22} & 0.2692 {\scriptsize $\pm$ 0.13} & 0.9109 {\scriptsize $\pm$ 0.0083} & 0.9815 {\scriptsize $\pm$ 0.0033} & 0.9856 {\scriptsize $\pm$ 0.0072} \\
+ &  & Random++ & 0.4588 {\scriptsize $\pm$ 0.19} & 0.3104 {\scriptsize $\pm$ 0.12} & 0.9055 {\scriptsize $\pm$ 0.0064} & 0.9806 {\scriptsize $\pm$ 0.0023} & 0.9866 {\scriptsize $\pm$ 0.0050} \\
+ &  & Search+ & \textbf{0.3680} {\scriptsize $\pm$ 0.23} & \underline{0.2539} {\scriptsize $\pm$ 0.13} & \textbf{0.9144} {\scriptsize $\pm$ 0.0093} & 0.9837 {\scriptsize $\pm$ 0.0030} & \textbf{0.9921} {\scriptsize $\pm$ 0.0019} \\
+ &  & Search++ & 0.4417 {\scriptsize $\pm$ 0.18} & 0.3077 {\scriptsize $\pm$ 0.12} & 0.9096 {\scriptsize $\pm$ 0.0066} & 0.9791 {\scriptsize $\pm$ 0.0052} & 0.9877 {\scriptsize $\pm$ 0.0043} \\
+ &  & AnchorPts & 0.4599 {\scriptsize $\pm$ 0.14} & 0.3201 {\scriptsize $\pm$ 0.11} & 0.8966 {\scriptsize $\pm$ 0.0076} & 0.9783 {\scriptsize $\pm$ 0.0035} & 0.9860 {\scriptsize $\pm$ 0.0041} \\
+ &  & AnchorPts Pred. & 0.5626 {\scriptsize $\pm$ 0.27} & 0.4085 {\scriptsize $\pm$ 0.16} & 0.8958 {\scriptsize $\pm$ 0.0079} & 0.9783 {\scriptsize $\pm$ 0.0034} & 0.9844 {\scriptsize $\pm$ 0.0033} \\
+ &  & AnchorPts+ & 0.4723 {\scriptsize $\pm$ 0.25} & 0.3282 {\scriptsize $\pm$ 0.15} & 0.9076 {\scriptsize $\pm$ 0.0082} & 0.9814 {\scriptsize $\pm$ 0.0034} & 0.9866 {\scriptsize $\pm$ 0.0045} \\
+ &  & AnchorPts++ & 0.4839 {\scriptsize $\pm$ 0.22} & 0.3395 {\scriptsize $\pm$ 0.14} & 0.9076 {\scriptsize $\pm$ 0.0063} & 0.9814 {\scriptsize $\pm$ 0.0030} & 0.9868 {\scriptsize $\pm$ 0.0039} \\
+ &  & Lasso & 1.1260 {\scriptsize $\pm$ 0.27} & 0.8770 {\scriptsize $\pm$ 0.15} & 0.7631 {\scriptsize $\pm$ 0.034} & 0.8947 {\scriptsize $\pm$ 0.028} & 0.8841 {\scriptsize $\pm$ 0.050} \\
+ &  & $\beta$ p-IRT & 2.0141 {\scriptsize $\pm$ 0.53} & 1.8635 {\scriptsize $\pm$ 0.52} & 0.8723 {\scriptsize $\pm$ 0.025} & 0.9554 {\scriptsize $\pm$ 0.017} & 0.9332 {\scriptsize $\pm$ 0.036} \\
+ &  & $\beta$ p-IRT+ & 0.4816 {\scriptsize $\pm$ 0.22} & 0.3042 {\scriptsize $\pm$ 0.13} & 0.9061 {\scriptsize $\pm$ 0.010} & 0.9794 {\scriptsize $\pm$ 0.0039} & 0.9825 {\scriptsize $\pm$ 0.0086} \\
+ &  & $\beta$ p-IRT++ & 0.4773 {\scriptsize $\pm$ 0.18} & 0.3196 {\scriptsize $\pm$ 0.12} & 0.9097 {\scriptsize $\pm$ 0.0057} & 0.9823 {\scriptsize $\pm$ 0.0021} & 0.9851 {\scriptsize $\pm$ 0.0062} \\
+ &  & $\beta$ gp-IRT & \underline{0.3869} {\scriptsize $\pm$ 0.18} & 0.2728 {\scriptsize $\pm$ 0.15} & 0.8907 {\scriptsize $\pm$ 0.016} & 0.9749 {\scriptsize $\pm$ 0.0071} & 0.9875 {\scriptsize $\pm$ 0.0039} \\
+ &  & $\beta$ gp-IRT+ & 0.4816 {\scriptsize $\pm$ 0.22} & 0.3042 {\scriptsize $\pm$ 0.13} & 0.9061 {\scriptsize $\pm$ 0.010} & 0.9794 {\scriptsize $\pm$ 0.0039} & 0.9825 {\scriptsize $\pm$ 0.0086} \\
+ &  & $\beta$ gp-IRT++ & 0.4773 {\scriptsize $\pm$ 0.18} & 0.3196 {\scriptsize $\pm$ 0.12} & 0.9097 {\scriptsize $\pm$ 0.0057} & 0.9823 {\scriptsize $\pm$ 0.0021} & 0.9851 {\scriptsize $\pm$ 0.0062} \\
+ &  & mRMR+ & 0.4151 {\scriptsize $\pm$ 0.23} & 0.2693 {\scriptsize $\pm$ 0.13} & \underline{0.9131} {\scriptsize $\pm$ 0.011} & \underline{0.9838} {\scriptsize $\pm$ 0.0034} & \underline{0.9877} {\scriptsize $\pm$ 0.0048} \\
+ &  & mRMR++ & 0.4511 {\scriptsize $\pm$ 0.19} & 0.3096 {\scriptsize $\pm$ 0.12} & 0.9115 {\scriptsize $\pm$ 0.0067} & \textbf{0.9842} {\scriptsize $\pm$ 0.0023} & 0.9868 {\scriptsize $\pm$ 0.0046} \\
+\midrule
+10\% & 52 & Random & 0.4109 {\scriptsize $\pm$ 0.16} & 0.2670 {\scriptsize $\pm$ 0.11} & 0.8972 {\scriptsize $\pm$ 0.011} & 0.9752 {\scriptsize $\pm$ 0.0058} & 0.9828 {\scriptsize $\pm$ 0.0076} \\
+ &  & Random+ & 0.3798 {\scriptsize $\pm$ 0.17} & 0.2366 {\scriptsize $\pm$ 0.11} & 0.9251 {\scriptsize $\pm$ 0.0095} & 0.9853 {\scriptsize $\pm$ 0.0031} & 0.9904 {\scriptsize $\pm$ 0.0055} \\
+ &  & Random++ & 0.4017 {\scriptsize $\pm$ 0.15} & 0.2655 {\scriptsize $\pm$ 0.098} & 0.9143 {\scriptsize $\pm$ 0.0056} & 0.9834 {\scriptsize $\pm$ 0.0024} & 0.9896 {\scriptsize $\pm$ 0.0051} \\
+ &  & Search+ & \textbf{0.3228} {\scriptsize $\pm$ 0.16} & \textbf{0.2160} {\scriptsize $\pm$ 0.11} & \underline{0.9336} {\scriptsize $\pm$ 0.0082} & \underline{0.9887} {\scriptsize $\pm$ 0.0026} & \textbf{0.9940} {\scriptsize $\pm$ 0.0029} \\
+ &  & Search++ & 0.3907 {\scriptsize $\pm$ 0.14} & 0.2555 {\scriptsize $\pm$ 0.093} & 0.9187 {\scriptsize $\pm$ 0.0066} & 0.9828 {\scriptsize $\pm$ 0.0045} & 0.9899 {\scriptsize $\pm$ 0.0052} \\
+ &  & AnchorPts & 0.5335 {\scriptsize $\pm$ 0.19} & 0.3586 {\scriptsize $\pm$ 0.13} & 0.9113 {\scriptsize $\pm$ 0.0080} & 0.9835 {\scriptsize $\pm$ 0.0032} & 0.9872 {\scriptsize $\pm$ 0.0058} \\
+ &  & AnchorPts Pred. & 0.5312 {\scriptsize $\pm$ 0.16} & 0.3880 {\scriptsize $\pm$ 0.12} & 0.9109 {\scriptsize $\pm$ 0.0080} & 0.9831 {\scriptsize $\pm$ 0.0030} & 0.9844 {\scriptsize $\pm$ 0.0071} \\
+ &  & AnchorPts+ & 0.3697 {\scriptsize $\pm$ 0.16} & 0.2512 {\scriptsize $\pm$ 0.099} & \textbf{0.9342} {\scriptsize $\pm$ 0.0051} & \textbf{0.9893} {\scriptsize $\pm$ 0.0018} & 0.9931 {\scriptsize $\pm$ 0.0030} \\
+ &  & AnchorPts++ & 0.3700 {\scriptsize $\pm$ 0.16} & 0.2550 {\scriptsize $\pm$ 0.10} & 0.9250 {\scriptsize $\pm$ 0.0040} & 0.9885 {\scriptsize $\pm$ 0.0014} & \underline{0.9934} {\scriptsize $\pm$ 0.0018} \\
+ &  & Lasso & 1.0739 {\scriptsize $\pm$ 0.14} & 0.8388 {\scriptsize $\pm$ 0.083} & 0.8088 {\scriptsize $\pm$ 0.038} & 0.9264 {\scriptsize $\pm$ 0.024} & 0.8790 {\scriptsize $\pm$ 0.075} \\
+ &  & $\beta$ p-IRT & 2.0514 {\scriptsize $\pm$ 0.60} & 1.9575 {\scriptsize $\pm$ 0.60} & 0.8763 {\scriptsize $\pm$ 0.020} & 0.9600 {\scriptsize $\pm$ 0.013} & 0.9540 {\scriptsize $\pm$ 0.023} \\
+ &  & $\beta$ p-IRT+ & 0.3941 {\scriptsize $\pm$ 0.15} & 0.2525 {\scriptsize $\pm$ 0.095} & 0.9207 {\scriptsize $\pm$ 0.0096} & 0.9824 {\scriptsize $\pm$ 0.0049} & 0.9890 {\scriptsize $\pm$ 0.0072} \\
+ &  & $\beta$ p-IRT++ & 0.3934 {\scriptsize $\pm$ 0.13} & 0.2656 {\scriptsize $\pm$ 0.090} & 0.9139 {\scriptsize $\pm$ 0.0070} & 0.9826 {\scriptsize $\pm$ 0.0034} & 0.9892 {\scriptsize $\pm$ 0.0056} \\
+ &  & $\beta$ gp-IRT & 0.4062 {\scriptsize $\pm$ 0.14} & 0.2576 {\scriptsize $\pm$ 0.11} & 0.8892 {\scriptsize $\pm$ 0.014} & 0.9712 {\scriptsize $\pm$ 0.0079} & 0.9839 {\scriptsize $\pm$ 0.0077} \\
+ &  & $\beta$ gp-IRT+ & 0.3941 {\scriptsize $\pm$ 0.15} & 0.2525 {\scriptsize $\pm$ 0.095} & 0.9207 {\scriptsize $\pm$ 0.0096} & 0.9824 {\scriptsize $\pm$ 0.0049} & 0.9890 {\scriptsize $\pm$ 0.0072} \\
+ &  & $\beta$ gp-IRT++ & 0.3934 {\scriptsize $\pm$ 0.13} & 0.2656 {\scriptsize $\pm$ 0.090} & 0.9139 {\scriptsize $\pm$ 0.0070} & 0.9826 {\scriptsize $\pm$ 0.0034} & 0.9892 {\scriptsize $\pm$ 0.0056} \\
+ &  & mRMR+ & \underline{0.3426} {\scriptsize $\pm$ 0.17} & \underline{0.2259} {\scriptsize $\pm$ 0.11} & 0.9295 {\scriptsize $\pm$ 0.0087} & 0.9873 {\scriptsize $\pm$ 0.0029} & 0.9931 {\scriptsize $\pm$ 0.0031} \\
+ &  & mRMR++ & 0.3763 {\scriptsize $\pm$ 0.16} & 0.2603 {\scriptsize $\pm$ 0.11} & 0.9193 {\scriptsize $\pm$ 0.0074} & 0.9860 {\scriptsize $\pm$ 0.0026} & 0.9912 {\scriptsize $\pm$ 0.0037} \\
+\midrule
+15\% & 16 & Random & \underline{0.2899} {\scriptsize $\pm$ 0.15} & \textbf{0.1946} {\scriptsize $\pm$ 0.11} & \textbf{0.9185} {\scriptsize $\pm$ 0.0097} & \underline{0.9841} {\scriptsize $\pm$ 0.0039} & 0.9901 {\scriptsize $\pm$ 0.0043} \\
+ &  & Random+ & 0.5923 {\scriptsize $\pm$ 0.33} & 0.4328 {\scriptsize $\pm$ 0.20} & 0.9063 {\scriptsize $\pm$ 0.012} & 0.9815 {\scriptsize $\pm$ 0.0039} & 0.9823 {\scriptsize $\pm$ 0.0071} \\
+ &  & Random++ & 0.6398 {\scriptsize $\pm$ 0.32} & 0.4776 {\scriptsize $\pm$ 0.23} & \underline{0.9163} {\scriptsize $\pm$ 0.0073} & \textbf{0.9852} {\scriptsize $\pm$ 0.0023} & 0.9894 {\scriptsize $\pm$ 0.0026} \\
+ &  & Search+ & 0.6186 {\scriptsize $\pm$ 0.34} & 0.4504 {\scriptsize $\pm$ 0.20} & 0.9016 {\scriptsize $\pm$ 0.013} & 0.9800 {\scriptsize $\pm$ 0.0040} & 0.9833 {\scriptsize $\pm$ 0.0050} \\
+ &  & Search++ & 0.6123 {\scriptsize $\pm$ 0.32} & 0.4696 {\scriptsize $\pm$ 0.23} & 0.9148 {\scriptsize $\pm$ 0.011} & 0.9840 {\scriptsize $\pm$ 0.0037} & \textbf{0.9915} {\scriptsize $\pm$ 0.00093} \\
+ &  & AnchorPts & 0.4318 {\scriptsize $\pm$ 0.24} & 0.3009 {\scriptsize $\pm$ 0.14} & 0.9076 {\scriptsize $\pm$ 0.0086} & 0.9804 {\scriptsize $\pm$ 0.0041} & 0.9879 {\scriptsize $\pm$ 0.0023} \\
+ &  & AnchorPts Pred. & 0.6019 {\scriptsize $\pm$ 0.31} & 0.4543 {\scriptsize $\pm$ 0.21} & 0.8929 {\scriptsize $\pm$ 0.011} & 0.9757 {\scriptsize $\pm$ 0.0054} & 0.9810 {\scriptsize $\pm$ 0.0047} \\
+ &  & AnchorPts+ & 0.7479 {\scriptsize $\pm$ 0.51} & 0.5506 {\scriptsize $\pm$ 0.30} & 0.8854 {\scriptsize $\pm$ 0.017} & 0.9732 {\scriptsize $\pm$ 0.0063} & 0.9728 {\scriptsize $\pm$ 0.011} \\
+ &  & AnchorPts++ & 0.7652 {\scriptsize $\pm$ 0.43} & 0.5866 {\scriptsize $\pm$ 0.32} & 0.8956 {\scriptsize $\pm$ 0.011} & 0.9762 {\scriptsize $\pm$ 0.0046} & 0.9805 {\scriptsize $\pm$ 0.0060} \\
+ &  & Lasso & 1.5105 {\scriptsize $\pm$ 0.52} & 1.1800 {\scriptsize $\pm$ 0.36} & 0.5831 {\scriptsize $\pm$ 0.081} & 0.7113 {\scriptsize $\pm$ 0.095} & 0.7319 {\scriptsize $\pm$ 0.096} \\
+ &  & $\beta$ p-IRT & 1.9089 {\scriptsize $\pm$ 0.58} & 1.7986 {\scriptsize $\pm$ 0.57} & 0.8989 {\scriptsize $\pm$ 0.014} & 0.9693 {\scriptsize $\pm$ 0.0082} & 0.9576 {\scriptsize $\pm$ 0.026} \\
+ &  & $\beta$ p-IRT+ & 0.6576 {\scriptsize $\pm$ 0.36} & 0.4840 {\scriptsize $\pm$ 0.21} & 0.8968 {\scriptsize $\pm$ 0.013} & 0.9766 {\scriptsize $\pm$ 0.0050} & 0.9788 {\scriptsize $\pm$ 0.0075} \\
+ &  & $\beta$ p-IRT++ & 0.6363 {\scriptsize $\pm$ 0.31} & 0.4855 {\scriptsize $\pm$ 0.23} & 0.9139 {\scriptsize $\pm$ 0.0073} & 0.9831 {\scriptsize $\pm$ 0.0030} & 0.9901 {\scriptsize $\pm$ 0.0015} \\
+ &  & $\beta$ gp-IRT & \textbf{0.2899} {\scriptsize $\pm$ 0.13} & \underline{0.2047} {\scriptsize $\pm$ 0.10} & 0.9104 {\scriptsize $\pm$ 0.011} & 0.9811 {\scriptsize $\pm$ 0.0043} & \underline{0.9911} {\scriptsize $\pm$ 0.0028} \\
+ &  & $\beta$ gp-IRT+ & 0.6576 {\scriptsize $\pm$ 0.36} & 0.4840 {\scriptsize $\pm$ 0.21} & 0.8968 {\scriptsize $\pm$ 0.013} & 0.9766 {\scriptsize $\pm$ 0.0050} & 0.9788 {\scriptsize $\pm$ 0.0075} \\
+ &  & $\beta$ gp-IRT++ & 0.6363 {\scriptsize $\pm$ 0.31} & 0.4855 {\scriptsize $\pm$ 0.23} & 0.9139 {\scriptsize $\pm$ 0.0073} & 0.9831 {\scriptsize $\pm$ 0.0030} & 0.9901 {\scriptsize $\pm$ 0.0015} \\
+ &  & mRMR+ & 0.6291 {\scriptsize $\pm$ 0.38} & 0.4642 {\scriptsize $\pm$ 0.23} & 0.8956 {\scriptsize $\pm$ 0.014} & 0.9771 {\scriptsize $\pm$ 0.0052} & 0.9820 {\scriptsize $\pm$ 0.0059} \\
+ &  & mRMR++ & 0.6558 {\scriptsize $\pm$ 0.35} & 0.4998 {\scriptsize $\pm$ 0.26} & 0.9134 {\scriptsize $\pm$ 0.0074} & 0.9839 {\scriptsize $\pm$ 0.0025} & 0.9894 {\scriptsize $\pm$ 0.0020} \\
+\midrule
+15\% & 32 & Random & \textbf{0.2920} {\scriptsize $\pm$ 0.14} & \textbf{0.1942} {\scriptsize $\pm$ 0.10} & 0.9171 {\scriptsize $\pm$ 0.0092} & 0.9837 {\scriptsize $\pm$ 0.0037} & 0.9901 {\scriptsize $\pm$ 0.0043} \\
+ &  & Random+ & 0.3693 {\scriptsize $\pm$ 0.21} & 0.2365 {\scriptsize $\pm$ 0.12} & 0.9265 {\scriptsize $\pm$ 0.0080} & 0.9872 {\scriptsize $\pm$ 0.0024} & 0.9896 {\scriptsize $\pm$ 0.0050} \\
+ &  & Random++ & 0.3981 {\scriptsize $\pm$ 0.18} & 0.2771 {\scriptsize $\pm$ 0.11} & 0.9223 {\scriptsize $\pm$ 0.0042} & 0.9868 {\scriptsize $\pm$ 0.0014} & 0.9915 {\scriptsize $\pm$ 0.0027} \\
+ &  & Search+ & 0.3501 {\scriptsize $\pm$ 0.17} & 0.2349 {\scriptsize $\pm$ 0.099} & 0.9241 {\scriptsize $\pm$ 0.0074} & 0.9854 {\scriptsize $\pm$ 0.0027} & 0.9904 {\scriptsize $\pm$ 0.0045} \\
+ &  & Search++ & 0.3999 {\scriptsize $\pm$ 0.16} & 0.2807 {\scriptsize $\pm$ 0.10} & \textbf{0.9275} {\scriptsize $\pm$ 0.0039} & \textbf{0.9888} {\scriptsize $\pm$ 0.0014} & 0.9905 {\scriptsize $\pm$ 0.0040} \\
+ &  & AnchorPts & 0.4305 {\scriptsize $\pm$ 0.14} & 0.2966 {\scriptsize $\pm$ 0.10} & 0.9075 {\scriptsize $\pm$ 0.0077} & 0.9800 {\scriptsize $\pm$ 0.0049} & 0.9860 {\scriptsize $\pm$ 0.0052} \\
+ &  & AnchorPts Pred. & 0.5344 {\scriptsize $\pm$ 0.23} & 0.3976 {\scriptsize $\pm$ 0.15} & 0.8981 {\scriptsize $\pm$ 0.0071} & 0.9788 {\scriptsize $\pm$ 0.0034} & 0.9839 {\scriptsize $\pm$ 0.0041} \\
+ &  & AnchorPts+ & 0.3976 {\scriptsize $\pm$ 0.25} & 0.2724 {\scriptsize $\pm$ 0.14} & 0.9215 {\scriptsize $\pm$ 0.0080} & 0.9845 {\scriptsize $\pm$ 0.0037} & 0.9897 {\scriptsize $\pm$ 0.0037} \\
+ &  & AnchorPts++ & 0.4435 {\scriptsize $\pm$ 0.20} & 0.3202 {\scriptsize $\pm$ 0.13} & 0.9155 {\scriptsize $\pm$ 0.0057} & 0.9842 {\scriptsize $\pm$ 0.0027} & 0.9888 {\scriptsize $\pm$ 0.0030} \\
+ &  & Lasso & 1.1260 {\scriptsize $\pm$ 0.27} & 0.8770 {\scriptsize $\pm$ 0.15} & 0.7631 {\scriptsize $\pm$ 0.034} & 0.8947 {\scriptsize $\pm$ 0.028} & 0.8841 {\scriptsize $\pm$ 0.050} \\
+ &  & $\beta$ p-IRT & 1.8904 {\scriptsize $\pm$ 0.52} & 1.7929 {\scriptsize $\pm$ 0.52} & 0.8975 {\scriptsize $\pm$ 0.019} & 0.9675 {\scriptsize $\pm$ 0.014} & 0.9556 {\scriptsize $\pm$ 0.025} \\
+ &  & $\beta$ p-IRT+ & 0.3754 {\scriptsize $\pm$ 0.23} & 0.2539 {\scriptsize $\pm$ 0.13} & \underline{0.9266} {\scriptsize $\pm$ 0.011} & 0.9869 {\scriptsize $\pm$ 0.0037} & 0.9918 {\scriptsize $\pm$ 0.0027} \\
+ &  & $\beta$ p-IRT++ & 0.3808 {\scriptsize $\pm$ 0.18} & 0.2774 {\scriptsize $\pm$ 0.12} & 0.9263 {\scriptsize $\pm$ 0.0064} & 0.9881 {\scriptsize $\pm$ 0.0022} & \underline{0.9938} {\scriptsize $\pm$ 0.00079} \\
+ &  & $\beta$ gp-IRT & \underline{0.3170} {\scriptsize $\pm$ 0.15} & 0.2238 {\scriptsize $\pm$ 0.12} & 0.9170 {\scriptsize $\pm$ 0.010} & 0.9853 {\scriptsize $\pm$ 0.0036} & 0.9910 {\scriptsize $\pm$ 0.0034} \\
+ &  & $\beta$ gp-IRT+ & 0.3754 {\scriptsize $\pm$ 0.23} & 0.2539 {\scriptsize $\pm$ 0.13} & 0.9266 {\scriptsize $\pm$ 0.011} & 0.9869 {\scriptsize $\pm$ 0.0037} & 0.9918 {\scriptsize $\pm$ 0.0027} \\
+ &  & $\beta$ gp-IRT++ & 0.3808 {\scriptsize $\pm$ 0.18} & 0.2774 {\scriptsize $\pm$ 0.12} & 0.9263 {\scriptsize $\pm$ 0.0064} & \underline{0.9881} {\scriptsize $\pm$ 0.0022} & \textbf{0.9938} {\scriptsize $\pm$ 0.00079} \\
+ &  & mRMR+ & 0.3322 {\scriptsize $\pm$ 0.21} & \underline{0.2237} {\scriptsize $\pm$ 0.13} & 0.9246 {\scriptsize $\pm$ 0.011} & 0.9870 {\scriptsize $\pm$ 0.0035} & 0.9932 {\scriptsize $\pm$ 0.0020} \\
+ &  & mRMR++ & 0.3956 {\scriptsize $\pm$ 0.19} & 0.2845 {\scriptsize $\pm$ 0.12} & 0.9237 {\scriptsize $\pm$ 0.0079} & 0.9877 {\scriptsize $\pm$ 0.0025} & 0.9924 {\scriptsize $\pm$ 0.0018} \\
+\midrule
+15\% & 52 & Random & 0.3075 {\scriptsize $\pm$ 0.14} & 0.2032 {\scriptsize $\pm$ 0.097} & 0.9176 {\scriptsize $\pm$ 0.0093} & 0.9838 {\scriptsize $\pm$ 0.0038} & 0.9900 {\scriptsize $\pm$ 0.0043} \\
+ &  & Random+ & 0.2905 {\scriptsize $\pm$ 0.14} & \underline{0.1869} {\scriptsize $\pm$ 0.089} & \underline{0.9431} {\scriptsize $\pm$ 0.0065} & \underline{0.9914} {\scriptsize $\pm$ 0.0017} & 0.9949 {\scriptsize $\pm$ 0.0027} \\
+ &  & Random++ & 0.3248 {\scriptsize $\pm$ 0.13} & 0.2208 {\scriptsize $\pm$ 0.081} & 0.9307 {\scriptsize $\pm$ 0.0038} & 0.9888 {\scriptsize $\pm$ 0.0015} & 0.9938 {\scriptsize $\pm$ 0.0028} \\
+ &  & Search+ & \underline{0.2765} {\scriptsize $\pm$ 0.13} & \textbf{0.1842} {\scriptsize $\pm$ 0.090} & 0.9427 {\scriptsize $\pm$ 0.0081} & 0.9893 {\scriptsize $\pm$ 0.0029} & \underline{0.9957} {\scriptsize $\pm$ 0.0020} \\
+ &  & Search++ & 0.2968 {\scriptsize $\pm$ 0.12} & 0.2158 {\scriptsize $\pm$ 0.082} & 0.9329 {\scriptsize $\pm$ 0.0054} & 0.9883 {\scriptsize $\pm$ 0.0022} & 0.9955 {\scriptsize $\pm$ 0.0015} \\
+ &  & AnchorPts & 0.4921 {\scriptsize $\pm$ 0.19} & 0.3285 {\scriptsize $\pm$ 0.12} & 0.9224 {\scriptsize $\pm$ 0.0082} & 0.9867 {\scriptsize $\pm$ 0.0030} & 0.9889 {\scriptsize $\pm$ 0.0053} \\
+ &  & AnchorPts Pred. & 0.5041 {\scriptsize $\pm$ 0.15} & 0.3759 {\scriptsize $\pm$ 0.12} & 0.9127 {\scriptsize $\pm$ 0.0077} & 0.9844 {\scriptsize $\pm$ 0.0028} & 0.9848 {\scriptsize $\pm$ 0.0069} \\
+ &  & AnchorPts+ & 0.3051 {\scriptsize $\pm$ 0.13} & 0.2065 {\scriptsize $\pm$ 0.087} & \textbf{0.9457} {\scriptsize $\pm$ 0.0036} & \textbf{0.9919} {\scriptsize $\pm$ 0.0012} & 0.9946 {\scriptsize $\pm$ 0.0028} \\
+ &  & AnchorPts++ & 0.3162 {\scriptsize $\pm$ 0.12} & 0.2270 {\scriptsize $\pm$ 0.080} & 0.9333 {\scriptsize $\pm$ 0.0047} & 0.9906 {\scriptsize $\pm$ 0.0012} & 0.9948 {\scriptsize $\pm$ 0.0014} \\
+ &  & Lasso & 1.0739 {\scriptsize $\pm$ 0.14} & 0.8388 {\scriptsize $\pm$ 0.083} & 0.8088 {\scriptsize $\pm$ 0.038} & 0.9264 {\scriptsize $\pm$ 0.024} & 0.8790 {\scriptsize $\pm$ 0.075} \\
+ &  & $\beta$ p-IRT & 1.9603 {\scriptsize $\pm$ 0.59} & 1.8860 {\scriptsize $\pm$ 0.60} & 0.8880 {\scriptsize $\pm$ 0.022} & 0.9638 {\scriptsize $\pm$ 0.012} & 0.9644 {\scriptsize $\pm$ 0.020} \\
+ &  & $\beta$ p-IRT+ & 0.3076 {\scriptsize $\pm$ 0.15} & 0.2026 {\scriptsize $\pm$ 0.097} & 0.9364 {\scriptsize $\pm$ 0.0087} & 0.9862 {\scriptsize $\pm$ 0.0049} & 0.9929 {\scriptsize $\pm$ 0.0045} \\
+ &  & $\beta$ p-IRT++ & 0.3417 {\scriptsize $\pm$ 0.13} & 0.2363 {\scriptsize $\pm$ 0.084} & 0.9269 {\scriptsize $\pm$ 0.0070} & 0.9853 {\scriptsize $\pm$ 0.0044} & 0.9924 {\scriptsize $\pm$ 0.0039} \\
+ &  & $\beta$ gp-IRT & 0.2816 {\scriptsize $\pm$ 0.12} & 0.1992 {\scriptsize $\pm$ 0.099} & 0.9092 {\scriptsize $\pm$ 0.014} & 0.9811 {\scriptsize $\pm$ 0.0056} & 0.9925 {\scriptsize $\pm$ 0.0023} \\
+ &  & $\beta$ gp-IRT+ & 0.3076 {\scriptsize $\pm$ 0.15} & 0.2026 {\scriptsize $\pm$ 0.097} & 0.9364 {\scriptsize $\pm$ 0.0087} & 0.9862 {\scriptsize $\pm$ 0.0049} & 0.9929 {\scriptsize $\pm$ 0.0045} \\
+ &  & $\beta$ gp-IRT++ & 0.3417 {\scriptsize $\pm$ 0.13} & 0.2363 {\scriptsize $\pm$ 0.084} & 0.9269 {\scriptsize $\pm$ 0.0070} & 0.9853 {\scriptsize $\pm$ 0.0044} & 0.9924 {\scriptsize $\pm$ 0.0039} \\
+ &  & mRMR+ & \textbf{0.2681} {\scriptsize $\pm$ 0.16} & 0.1872 {\scriptsize $\pm$ 0.10} & 0.9415 {\scriptsize $\pm$ 0.0084} & 0.9908 {\scriptsize $\pm$ 0.0023} & \textbf{0.9968} {\scriptsize $\pm$ 0.00076} \\
+ &  & mRMR++ & 0.3124 {\scriptsize $\pm$ 0.14} & 0.2301 {\scriptsize $\pm$ 0.093} & 0.9316 {\scriptsize $\pm$ 0.0069} & 0.9892 {\scriptsize $\pm$ 0.0022} & 0.9955 {\scriptsize $\pm$ 0.00090} \\
+\end{longtable}

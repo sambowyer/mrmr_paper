@@ -1,0 +1,176 @@
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+\setlength{\LTleft}{\fill}
+\setlength{\LTright}{\fill}
+\begin{longtable}{llp{0.2\textwidth}rrrrr}
+\caption{Ablation 4 table for pass@k (source k=1)}\label{tab:ablation\_4\_passk\_k1}\\
+\toprule
+$n$ & $M$ & Method & RMSE & MAE & Kendall $\tau$ & Spearman $\rho$ & Pearson $r$ \\
+\midrule
+\endfirsthead
+\toprule
+$n$ & $M$ & Method & RMSE & MAE & Kendall $\tau$ & Spearman $\rho$ & Pearson $r$ \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{\emph{Continued on next page}} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+5\% & 10 & LEGOgp-IRT & 7.6745 {\scriptsize $\pm$ 0.63} & 6.2683 {\scriptsize $\pm$ 0.52} & 0.7923 {\scriptsize $\pm$ 0.0088} & 0.9208 {\scriptsize $\pm$ 0.0066} & 0.9788 {\scriptsize $\pm$ 0.0064} \\
+ &  & LEGOgp-IRT & \underline{7.3723} {\scriptsize $\pm$ 0.78} & \underline{5.8976} {\scriptsize $\pm$ 0.61} & 0.8026 {\scriptsize $\pm$ 0.0083} & 0.9275 {\scriptsize $\pm$ 0.0049} & 0.9815 {\scriptsize $\pm$ 0.0054} \\
+ &  & LEGOgp-IRT & \underline{7.2000} {\scriptsize $\pm$ 0.78} & \textbf{5.6608} {\scriptsize $\pm$ 0.61} & 0.7869 {\scriptsize $\pm$ 0.011} & 0.9137 {\scriptsize $\pm$ 0.0065} & 0.9719 {\scriptsize $\pm$ 0.0081} \\
+ &  & LEGOp-IRT & 7.8348 {\scriptsize $\pm$ 0.63} & 6.4027 {\scriptsize $\pm$ 0.52} & 0.7861 {\scriptsize $\pm$ 0.01} & 0.9177 {\scriptsize $\pm$ 0.0073} & 0.9775 {\scriptsize $\pm$ 0.0069} \\
+ &  & LEGOp-IRT & \underline{7.4201} {\scriptsize $\pm$ 0.78} & \underline{5.9312} {\scriptsize $\pm$ 0.61} & 0.8018 {\scriptsize $\pm$ 0.0082} & 0.9270 {\scriptsize $\pm$ 0.0048} & 0.9815 {\scriptsize $\pm$ 0.0053} \\
+ &  & LEGOp-IRT & \underline{7.5289} {\scriptsize $\pm$ 0.81} & \underline{5.9557} {\scriptsize $\pm$ 0.66} & 0.7827 {\scriptsize $\pm$ 0.011} & 0.9110 {\scriptsize $\pm$ 0.0069} & 0.9684 {\scriptsize $\pm$ 0.01} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 7.7156 {\scriptsize $\pm$ 0.56} & 6.2453 {\scriptsize $\pm$ 0.45} & 0.8020 {\scriptsize $\pm$ 0.0064} & 0.9244 {\scriptsize $\pm$ 0.0038} & 0.9820 {\scriptsize $\pm$ 0.0046} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \textbf{6.8349} {\scriptsize $\pm$ 0.64} & \underline{5.8390} {\scriptsize $\pm$ 0.57} & \textbf{0.8208} {\scriptsize $\pm$ 0.0076} & \textbf{0.9377} {\scriptsize $\pm$ 0.0034} & \textbf{0.9878} {\scriptsize $\pm$ 0.0023} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \underline{7.4527} {\scriptsize $\pm$ 0.69} & \underline{6.0863} {\scriptsize $\pm$ 0.54} & 0.7821 {\scriptsize $\pm$ 0.0096} & 0.9105 {\scriptsize $\pm$ 0.006} & 0.9768 {\scriptsize $\pm$ 0.0066} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 7.8621 {\scriptsize $\pm$ 0.56} & 6.3703 {\scriptsize $\pm$ 0.45} & 0.7982 {\scriptsize $\pm$ 0.0073} & 0.9216 {\scriptsize $\pm$ 0.0047} & 0.9806 {\scriptsize $\pm$ 0.0054} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & \underline{6.8680} {\scriptsize $\pm$ 0.64} & \underline{5.8577} {\scriptsize $\pm$ 0.57} & \underline{0.8202} {\scriptsize $\pm$ 0.0075} & \underline{0.9373} {\scriptsize $\pm$ 0.0034} & \underline{0.9875} {\scriptsize $\pm$ 0.0025} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 7.6211 {\scriptsize $\pm$ 0.7} & 6.2212 {\scriptsize $\pm$ 0.56} & 0.7773 {\scriptsize $\pm$ 0.0099} & 0.9084 {\scriptsize $\pm$ 0.0062} & 0.9755 {\scriptsize $\pm$ 0.0075} \\
+ &  & Ggp-IRT & 8.6923 {\scriptsize $\pm$ 0.87} & 6.8101 {\scriptsize $\pm$ 0.69} & 0.7880 {\scriptsize $\pm$ 0.0097} & 0.9145 {\scriptsize $\pm$ 0.0058} & 0.9744 {\scriptsize $\pm$ 0.0063} \\
+ &  & Gp-IRT & 8.8650 {\scriptsize $\pm$ 0.86} & 6.9353 {\scriptsize $\pm$ 0.68} & 0.7831 {\scriptsize $\pm$ 0.0099} & 0.9110 {\scriptsize $\pm$ 0.0059} & 0.9730 {\scriptsize $\pm$ 0.0068} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & 7.6303 {\scriptsize $\pm$ 0.78} & \underline{6.0028} {\scriptsize $\pm$ 0.63} & 0.7743 {\scriptsize $\pm$ 0.012} & 0.9066 {\scriptsize $\pm$ 0.008} & 0.9724 {\scriptsize $\pm$ 0.0069} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & 7.7096 {\scriptsize $\pm$ 0.78} & \underline{6.1044} {\scriptsize $\pm$ 0.63} & 0.7753 {\scriptsize $\pm$ 0.011} & 0.9073 {\scriptsize $\pm$ 0.0076} & 0.9721 {\scriptsize $\pm$ 0.0069} \\
+\midrule
+5\% & 15 & LEGOgp-IRT & \textbf{5.4967} {\scriptsize $\pm$ 0.35} & 4.3522 {\scriptsize $\pm$ 0.26} & \underline{0.8058} {\scriptsize $\pm$ 0.01} & 0.9242 {\scriptsize $\pm$ 0.0068} & \textbf{0.9894} {\scriptsize $\pm$ 0.0022} \\
+ &  & LEGOgp-IRT & \underline{5.7747} {\scriptsize $\pm$ 0.44} & \underline{4.0813} {\scriptsize $\pm$ 0.23} & \underline{0.8141} {\scriptsize $\pm$ 0.034} & \textbf{0.9330} {\scriptsize $\pm$ 0.017} & \underline{0.9759} {\scriptsize $\pm$ 0.014} \\
+ &  & LEGOgp-IRT & 6.7556 {\scriptsize $\pm$ 0.74} & 5.0159 {\scriptsize $\pm$ 0.81} & \underline{0.7977} {\scriptsize $\pm$ 0.05} & \underline{0.9120} {\scriptsize $\pm$ 0.034} & 0.9428 {\scriptsize $\pm$ 0.037} \\
+ &  & LEGOp-IRT & \underline{5.5330} {\scriptsize $\pm$ 0.35} & 4.3645 {\scriptsize $\pm$ 0.26} & 0.8036 {\scriptsize $\pm$ 0.0096} & 0.9234 {\scriptsize $\pm$ 0.0068} & \underline{0.9889} {\scriptsize $\pm$ 0.0025} \\
+ &  & LEGOp-IRT & \underline{5.8484} {\scriptsize $\pm$ 0.41} & \textbf{4.0477} {\scriptsize $\pm$ 0.17} & \underline{0.8088} {\scriptsize $\pm$ 0.034} & \underline{0.9306} {\scriptsize $\pm$ 0.018} & \underline{0.9751} {\scriptsize $\pm$ 0.014} \\
+ &  & LEGOp-IRT & 7.6715 {\scriptsize $\pm$ 0.62} & 5.5127 {\scriptsize $\pm$ 0.78} & 0.7603 {\scriptsize $\pm$ 0.052} & 0.8860 {\scriptsize $\pm$ 0.043} & 0.9316 {\scriptsize $\pm$ 0.041} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 6.6787 {\scriptsize $\pm$ 0.5} & 5.3214 {\scriptsize $\pm$ 0.42} & \underline{0.8071} {\scriptsize $\pm$ 0.011} & \underline{0.9261} {\scriptsize $\pm$ 0.0074} & 0.9843 {\scriptsize $\pm$ 0.0037} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \underline{5.6296} {\scriptsize $\pm$ 1.1} & \underline{4.2484} {\scriptsize $\pm$ 0.78} & \textbf{0.8145} {\scriptsize $\pm$ 0.042} & \underline{0.9310} {\scriptsize $\pm$ 0.022} & \underline{0.9720} {\scriptsize $\pm$ 0.019} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 7.7882 {\scriptsize $\pm$ 0.88} & 5.7080 {\scriptsize $\pm$ 0.76} & \underline{0.7863} {\scriptsize $\pm$ 0.049} & \underline{0.9058} {\scriptsize $\pm$ 0.036} & 0.9445 {\scriptsize $\pm$ 0.035} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 6.7951 {\scriptsize $\pm$ 0.49} & 5.3917 {\scriptsize $\pm$ 0.41} & \underline{0.8055} {\scriptsize $\pm$ 0.011} & 0.9247 {\scriptsize $\pm$ 0.0079} & 0.9830 {\scriptsize $\pm$ 0.0045} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & \underline{6.0396} {\scriptsize $\pm$ 1.2} & \underline{4.4948} {\scriptsize $\pm$ 0.86} & \underline{0.8037} {\scriptsize $\pm$ 0.045} & \underline{0.9251} {\scriptsize $\pm$ 0.025} & \underline{0.9671} {\scriptsize $\pm$ 0.023} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 8.2269 {\scriptsize $\pm$ 0.84} & 6.0221 {\scriptsize $\pm$ 0.76} & \underline{0.7791} {\scriptsize $\pm$ 0.048} & \underline{0.9005} {\scriptsize $\pm$ 0.035} & 0.9407 {\scriptsize $\pm$ 0.037} \\
+ &  & Ggp-IRT & 6.7847 {\scriptsize $\pm$ 0.75} & 4.9059 {\scriptsize $\pm$ 0.54} & 0.7841 {\scriptsize $\pm$ 0.016} & 0.9043 {\scriptsize $\pm$ 0.012} & 0.9599 {\scriptsize $\pm$ 0.015} \\
+ &  & Gp-IRT & 7.0451 {\scriptsize $\pm$ 0.83} & 5.0923 {\scriptsize $\pm$ 0.6} & 0.7738 {\scriptsize $\pm$ 0.021} & 0.8968 {\scriptsize $\pm$ 0.016} & 0.9556 {\scriptsize $\pm$ 0.019} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & 7.4379 {\scriptsize $\pm$ 0.79} & 5.7678 {\scriptsize $\pm$ 0.62} & 0.7694 {\scriptsize $\pm$ 0.016} & 0.8997 {\scriptsize $\pm$ 0.011} & 0.9723 {\scriptsize $\pm$ 0.0063} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & 7.5328 {\scriptsize $\pm$ 0.79} & 5.8436 {\scriptsize $\pm$ 0.62} & 0.7672 {\scriptsize $\pm$ 0.016} & 0.8986 {\scriptsize $\pm$ 0.011} & 0.9716 {\scriptsize $\pm$ 0.0065} \\
+\midrule
+5\% & 20 & LEGOgp-IRT & \underline{4.6212} {\scriptsize $\pm$ 0.34} & \underline{4.2626} {\scriptsize $\pm$ 0.32} & \underline{0.8304} {\scriptsize $\pm$ 0.0065} & \textbf{0.9436} {\scriptsize $\pm$ 0.0037} & \underline{0.9885} {\scriptsize $\pm$ 0.003} \\
+ &  & LEGOgp-IRT & 5.8236 {\scriptsize $\pm$ 0.55} & 5.1650 {\scriptsize $\pm$ 0.5} & 0.8238 {\scriptsize $\pm$ 0.0062} & 0.9383 {\scriptsize $\pm$ 0.0032} & \underline{0.9862} {\scriptsize $\pm$ 0.0037} \\
+ &  & LEGOgp-IRT & 6.5397 {\scriptsize $\pm$ 0.82} & 6.0365 {\scriptsize $\pm$ 0.82} & 0.7509 {\scriptsize $\pm$ 0.015} & 0.8824 {\scriptsize $\pm$ 0.011} & 0.9705 {\scriptsize $\pm$ 0.0096} \\
+ &  & LEGOp-IRT & \underline{4.6648} {\scriptsize $\pm$ 0.36} & \underline{4.3256} {\scriptsize $\pm$ 0.33} & \underline{0.8284} {\scriptsize $\pm$ 0.0071} & \underline{0.9425} {\scriptsize $\pm$ 0.004} & \underline{0.9879} {\scriptsize $\pm$ 0.0032} \\
+ &  & LEGOp-IRT & 5.7980 {\scriptsize $\pm$ 0.55} & 5.1735 {\scriptsize $\pm$ 0.5} & 0.8231 {\scriptsize $\pm$ 0.0062} & 0.9380 {\scriptsize $\pm$ 0.0031} & \underline{0.9861} {\scriptsize $\pm$ 0.0037} \\
+ &  & LEGOp-IRT & 6.6221 {\scriptsize $\pm$ 0.83} & 6.0876 {\scriptsize $\pm$ 0.83} & 0.7475 {\scriptsize $\pm$ 0.016} & 0.8805 {\scriptsize $\pm$ 0.011} & 0.9676 {\scriptsize $\pm$ 0.011} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \textbf{4.4611} {\scriptsize $\pm$ 0.26} & \textbf{4.0401} {\scriptsize $\pm$ 0.24} & 0.8127 {\scriptsize $\pm$ 0.0087} & 0.9342 {\scriptsize $\pm$ 0.0051} & \underline{0.9879} {\scriptsize $\pm$ 0.003} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 4.9454 {\scriptsize $\pm$ 0.38} & \underline{4.2302} {\scriptsize $\pm$ 0.33} & \textbf{0.8333} {\scriptsize $\pm$ 0.0064} & \underline{0.9429} {\scriptsize $\pm$ 0.0029} & \textbf{0.9895} {\scriptsize $\pm$ 0.0023} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 5.6482 {\scriptsize $\pm$ 0.5} & 5.2510 {\scriptsize $\pm$ 0.5} & 0.7785 {\scriptsize $\pm$ 0.013} & 0.9103 {\scriptsize $\pm$ 0.007} & 0.9790 {\scriptsize $\pm$ 0.005} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & \underline{4.5290} {\scriptsize $\pm$ 0.31} & \underline{4.0923} {\scriptsize $\pm$ 0.29} & 0.8102 {\scriptsize $\pm$ 0.0095} & 0.9321 {\scriptsize $\pm$ 0.006} & \underline{0.9866} {\scriptsize $\pm$ 0.0039} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 4.9766 {\scriptsize $\pm$ 0.38} & \underline{4.2646} {\scriptsize $\pm$ 0.33} & \underline{0.8321} {\scriptsize $\pm$ 0.0065} & \underline{0.9422} {\scriptsize $\pm$ 0.0029} & \underline{0.9891} {\scriptsize $\pm$ 0.0025} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 5.7302 {\scriptsize $\pm$ 0.52} & 5.3380 {\scriptsize $\pm$ 0.52} & 0.7778 {\scriptsize $\pm$ 0.013} & 0.9099 {\scriptsize $\pm$ 0.0069} & 0.9786 {\scriptsize $\pm$ 0.0051} \\
+ &  & Ggp-IRT & 6.9046 {\scriptsize $\pm$ 0.66} & 6.0883 {\scriptsize $\pm$ 0.63} & 0.7901 {\scriptsize $\pm$ 0.015} & 0.9151 {\scriptsize $\pm$ 0.011} & 0.9526 {\scriptsize $\pm$ 0.016} \\
+ &  & Gp-IRT & 7.0552 {\scriptsize $\pm$ 0.67} & 6.2099 {\scriptsize $\pm$ 0.65} & 0.7845 {\scriptsize $\pm$ 0.017} & 0.9111 {\scriptsize $\pm$ 0.013} & 0.9501 {\scriptsize $\pm$ 0.017} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & 4.8871 {\scriptsize $\pm$ 0.4} & \underline{4.3921} {\scriptsize $\pm$ 0.39} & 0.7665 {\scriptsize $\pm$ 0.0098} & 0.9008 {\scriptsize $\pm$ 0.0073} & 0.9719 {\scriptsize $\pm$ 0.0086} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & 5.0203 {\scriptsize $\pm$ 0.46} & 4.5093 {\scriptsize $\pm$ 0.45} & 0.7663 {\scriptsize $\pm$ 0.0094} & 0.9007 {\scriptsize $\pm$ 0.0071} & 0.9716 {\scriptsize $\pm$ 0.0085} \\
+\midrule
+10\% & 10 & LEGOgp-IRT & 4.2148 {\scriptsize $\pm$ 0.33} & 3.4953 {\scriptsize $\pm$ 0.28} & 0.8471 {\scriptsize $\pm$ 0.0069} & 0.9480 {\scriptsize $\pm$ 0.0031} & \textbf{0.9936} {\scriptsize $\pm$ 0.0019} \\
+ &  & LEGOgp-IRT & 5.6353 {\scriptsize $\pm$ 0.58} & 4.3328 {\scriptsize $\pm$ 0.5} & \underline{0.8593} {\scriptsize $\pm$ 0.018} & 0.9583 {\scriptsize $\pm$ 0.0074} & 0.9817 {\scriptsize $\pm$ 0.011} \\
+ &  & LEGOgp-IRT & 4.4630 {\scriptsize $\pm$ 0.45} & \underline{3.5164} {\scriptsize $\pm$ 0.52} & \underline{0.8621} {\scriptsize $\pm$ 0.017} & 0.9520 {\scriptsize $\pm$ 0.011} & 0.9771 {\scriptsize $\pm$ 0.014} \\
+ &  & LEGOp-IRT & 4.3672 {\scriptsize $\pm$ 0.34} & 3.6227 {\scriptsize $\pm$ 0.3} & 0.8424 {\scriptsize $\pm$ 0.0071} & 0.9460 {\scriptsize $\pm$ 0.0034} & \underline{0.9925} {\scriptsize $\pm$ 0.0026} \\
+ &  & LEGOp-IRT & 6.2822 {\scriptsize $\pm$ 0.59} & 4.7701 {\scriptsize $\pm$ 0.58} & 0.8508 {\scriptsize $\pm$ 0.014} & 0.9534 {\scriptsize $\pm$ 0.005} & 0.9768 {\scriptsize $\pm$ 0.013} \\
+ &  & LEGOp-IRT & 8.1506 {\scriptsize $\pm$ 1.2} & 6.7559 {\scriptsize $\pm$ 1.4} & 0.7988 {\scriptsize $\pm$ 0.034} & 0.9179 {\scriptsize $\pm$ 0.024} & 0.9372 {\scriptsize $\pm$ 0.041} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 5.0348 {\scriptsize $\pm$ 0.39} & 3.9753 {\scriptsize $\pm$ 0.3} & 0.8404 {\scriptsize $\pm$ 0.0081} & 0.9444 {\scriptsize $\pm$ 0.0042} & 0.9906 {\scriptsize $\pm$ 0.0023} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \textbf{3.8127} {\scriptsize $\pm$ 0.2} & \textbf{3.0239} {\scriptsize $\pm$ 0.12} & \textbf{0.8768} {\scriptsize $\pm$ 0.021} & \textbf{0.9657} {\scriptsize $\pm$ 0.0078} & \underline{0.9896} {\scriptsize $\pm$ 0.0061} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 4.9495 {\scriptsize $\pm$ 0.97} & 4.0087 {\scriptsize $\pm$ 0.78} & \underline{0.8702} {\scriptsize $\pm$ 0.023} & \underline{0.9559} {\scriptsize $\pm$ 0.015} & 0.9750 {\scriptsize $\pm$ 0.017} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 5.1131 {\scriptsize $\pm$ 0.4} & 4.0469 {\scriptsize $\pm$ 0.31} & 0.8366 {\scriptsize $\pm$ 0.0083} & 0.9428 {\scriptsize $\pm$ 0.0043} & 0.9901 {\scriptsize $\pm$ 0.0026} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 3.9799 {\scriptsize $\pm$ 0.12} & 3.1281 {\scriptsize $\pm$ 0.075} & \underline{0.8688} {\scriptsize $\pm$ 0.02} & \underline{0.9619} {\scriptsize $\pm$ 0.0082} & \underline{0.9882} {\scriptsize $\pm$ 0.0067} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 6.4798 {\scriptsize $\pm$ 1.5} & 5.3570 {\scriptsize $\pm$ 1.3} & \underline{0.8571} {\scriptsize $\pm$ 0.025} & \underline{0.9543} {\scriptsize $\pm$ 0.011} & 0.9646 {\scriptsize $\pm$ 0.024} \\
+ &  & Ggp-IRT & 6.0058 {\scriptsize $\pm$ 0.76} & 4.8795 {\scriptsize $\pm$ 0.62} & 0.8309 {\scriptsize $\pm$ 0.012} & 0.9422 {\scriptsize $\pm$ 0.0057} & 0.9808 {\scriptsize $\pm$ 0.0061} \\
+ &  & Gp-IRT & 6.3028 {\scriptsize $\pm$ 0.76} & 5.0948 {\scriptsize $\pm$ 0.63} & 0.8229 {\scriptsize $\pm$ 0.013} & 0.9376 {\scriptsize $\pm$ 0.0068} & 0.9783 {\scriptsize $\pm$ 0.0077} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & 5.9867 {\scriptsize $\pm$ 0.7} & 4.9408 {\scriptsize $\pm$ 0.6} & 0.8311 {\scriptsize $\pm$ 0.0061} & 0.9462 {\scriptsize $\pm$ 0.0029} & 0.9837 {\scriptsize $\pm$ 0.005} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & 6.1788 {\scriptsize $\pm$ 0.73} & 5.0743 {\scriptsize $\pm$ 0.61} & 0.8294 {\scriptsize $\pm$ 0.006} & 0.9450 {\scriptsize $\pm$ 0.0029} & 0.9822 {\scriptsize $\pm$ 0.006} \\
+\midrule
+10\% & 15 & LEGOgp-IRT & 4.4706 {\scriptsize $\pm$ 0.47} & 3.5055 {\scriptsize $\pm$ 0.33} & 0.8748 {\scriptsize $\pm$ 0.0062} & 0.9643 {\scriptsize $\pm$ 0.0023} & \textbf{0.9932} {\scriptsize $\pm$ 0.0021} \\
+ &  & LEGOgp-IRT & \underline{3.7475} {\scriptsize $\pm$ 0.71} & \textbf{2.6852} {\scriptsize $\pm$ 0.52} & \underline{0.8890} {\scriptsize $\pm$ 0.03} & \underline{0.9693} {\scriptsize $\pm$ 0.01} & \underline{0.9908} {\scriptsize $\pm$ 0.0048} \\
+ &  & LEGOgp-IRT & 4.6666 {\scriptsize $\pm$ 0.73} & 3.6533 {\scriptsize $\pm$ 0.73} & 0.8278 {\scriptsize $\pm$ 0.038} & 0.9342 {\scriptsize $\pm$ 0.021} & 0.9745 {\scriptsize $\pm$ 0.016} \\
+ &  & LEGOp-IRT & 4.5588 {\scriptsize $\pm$ 0.47} & 3.5544 {\scriptsize $\pm$ 0.33} & 0.8718 {\scriptsize $\pm$ 0.0062} & 0.9627 {\scriptsize $\pm$ 0.0025} & \underline{0.9921} {\scriptsize $\pm$ 0.0029} \\
+ &  & LEGOp-IRT & \underline{3.9064} {\scriptsize $\pm$ 0.67} & \underline{2.8003} {\scriptsize $\pm$ 0.5} & \underline{0.8858} {\scriptsize $\pm$ 0.03} & \underline{0.9676} {\scriptsize $\pm$ 0.01} & \underline{0.9902} {\scriptsize $\pm$ 0.005} \\
+ &  & LEGOp-IRT & 6.9565 {\scriptsize $\pm$ 0.42} & 5.1989 {\scriptsize $\pm$ 0.69} & 0.8070 {\scriptsize $\pm$ 0.026} & 0.9229 {\scriptsize $\pm$ 0.012} & 0.9607 {\scriptsize $\pm$ 0.023} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 4.3944 {\scriptsize $\pm$ 0.35} & 3.5824 {\scriptsize $\pm$ 0.31} & 0.8429 {\scriptsize $\pm$ 0.012} & 0.9449 {\scriptsize $\pm$ 0.0059} & \underline{0.9931} {\scriptsize $\pm$ 0.0017} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \textbf{3.6361} {\scriptsize $\pm$ 0.45} & \underline{2.7286} {\scriptsize $\pm$ 0.3} & \textbf{0.8913} {\scriptsize $\pm$ 0.018} & \textbf{0.9696} {\scriptsize $\pm$ 0.0076} & \underline{0.9879} {\scriptsize $\pm$ 0.0076} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 5.1266 {\scriptsize $\pm$ 0.82} & 3.6330 {\scriptsize $\pm$ 0.66} & 0.8602 {\scriptsize $\pm$ 0.031} & 0.9544 {\scriptsize $\pm$ 0.014} & 0.9705 {\scriptsize $\pm$ 0.02} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 4.4780 {\scriptsize $\pm$ 0.35} & 3.6255 {\scriptsize $\pm$ 0.31} & 0.8403 {\scriptsize $\pm$ 0.011} & 0.9438 {\scriptsize $\pm$ 0.006} & \underline{0.9925} {\scriptsize $\pm$ 0.0021} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & \underline{4.2416} {\scriptsize $\pm$ 0.69} & 3.1594 {\scriptsize $\pm$ 0.45} & \underline{0.8843} {\scriptsize $\pm$ 0.023} & \underline{0.9639} {\scriptsize $\pm$ 0.011} & \underline{0.9850} {\scriptsize $\pm$ 0.0095} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 5.8532 {\scriptsize $\pm$ 0.82} & 4.2203 {\scriptsize $\pm$ 0.77} & 0.8457 {\scriptsize $\pm$ 0.035} & 0.9475 {\scriptsize $\pm$ 0.015} & 0.9669 {\scriptsize $\pm$ 0.021} \\
+ &  & Ggp-IRT & 4.7411 {\scriptsize $\pm$ 0.41} & 3.5438 {\scriptsize $\pm$ 0.29} & 0.8323 {\scriptsize $\pm$ 0.0084} & 0.9436 {\scriptsize $\pm$ 0.0047} & 0.9851 {\scriptsize $\pm$ 0.0047} \\
+ &  & Gp-IRT & 5.1691 {\scriptsize $\pm$ 0.53} & 3.8139 {\scriptsize $\pm$ 0.37} & 0.8226 {\scriptsize $\pm$ 0.0097} & 0.9377 {\scriptsize $\pm$ 0.006} & 0.9813 {\scriptsize $\pm$ 0.0077} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & 4.4271 {\scriptsize $\pm$ 0.43} & 3.3631 {\scriptsize $\pm$ 0.31} & 0.8302 {\scriptsize $\pm$ 0.0099} & 0.9409 {\scriptsize $\pm$ 0.0048} & 0.9874 {\scriptsize $\pm$ 0.0036} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & 4.5352 {\scriptsize $\pm$ 0.45} & 3.4696 {\scriptsize $\pm$ 0.33} & 0.8290 {\scriptsize $\pm$ 0.0099} & 0.9402 {\scriptsize $\pm$ 0.0047} & 0.9867 {\scriptsize $\pm$ 0.0039} \\
+\midrule
+10\% & 20 & LEGOgp-IRT & \underline{3.1367} {\scriptsize $\pm$ 0.21} & \underline{2.8705} {\scriptsize $\pm$ 0.2} & 0.8594 {\scriptsize $\pm$ 0.0075} & 0.9569 {\scriptsize $\pm$ 0.0033} & \textbf{0.9954} {\scriptsize $\pm$ 0.0011} \\
+ &  & LEGOgp-IRT & 3.5893 {\scriptsize $\pm$ 0.31} & 3.2446 {\scriptsize $\pm$ 0.3} & \underline{0.8664} {\scriptsize $\pm$ 0.0075} & \underline{0.9613} {\scriptsize $\pm$ 0.0028} & \underline{0.9951} {\scriptsize $\pm$ 0.0012} \\
+ &  & LEGOgp-IRT & 3.5031 {\scriptsize $\pm$ 0.31} & 3.2119 {\scriptsize $\pm$ 0.3} & 0.8526 {\scriptsize $\pm$ 0.0043} & 0.9525 {\scriptsize $\pm$ 0.0022} & 0.9889 {\scriptsize $\pm$ 0.003} \\
+ &  & LEGOp-IRT & \underline{3.1373} {\scriptsize $\pm$ 0.21} & \underline{2.8714} {\scriptsize $\pm$ 0.19} & 0.8583 {\scriptsize $\pm$ 0.0078} & 0.9563 {\scriptsize $\pm$ 0.0035} & \underline{0.9950} {\scriptsize $\pm$ 0.0014} \\
+ &  & LEGOp-IRT & 3.6174 {\scriptsize $\pm$ 0.35} & 3.2754 {\scriptsize $\pm$ 0.33} & 0.8645 {\scriptsize $\pm$ 0.0074} & \underline{0.9605} {\scriptsize $\pm$ 0.0029} & \underline{0.9949} {\scriptsize $\pm$ 0.0012} \\
+ &  & LEGOp-IRT & 3.6773 {\scriptsize $\pm$ 0.37} & 3.3564 {\scriptsize $\pm$ 0.35} & 0.8461 {\scriptsize $\pm$ 0.0045} & 0.9492 {\scriptsize $\pm$ 0.0027} & 0.9862 {\scriptsize $\pm$ 0.0048} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 4.4834 {\scriptsize $\pm$ 0.44} & 4.0589 {\scriptsize $\pm$ 0.44} & 0.8457 {\scriptsize $\pm$ 0.0085} & 0.9527 {\scriptsize $\pm$ 0.0037} & 0.9929 {\scriptsize $\pm$ 0.0021} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 3.7792 {\scriptsize $\pm$ 0.39} & 3.4031 {\scriptsize $\pm$ 0.38} & \textbf{0.8721} {\scriptsize $\pm$ 0.009} & \textbf{0.9630} {\scriptsize $\pm$ 0.0033} & \underline{0.9936} {\scriptsize $\pm$ 0.0022} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 4.6435 {\scriptsize $\pm$ 0.72} & 4.1557 {\scriptsize $\pm$ 0.64} & 0.8480 {\scriptsize $\pm$ 0.0078} & 0.9534 {\scriptsize $\pm$ 0.0032} & 0.9898 {\scriptsize $\pm$ 0.0023} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 4.6477 {\scriptsize $\pm$ 0.45} & 4.1797 {\scriptsize $\pm$ 0.44} & 0.8433 {\scriptsize $\pm$ 0.0093} & 0.9514 {\scriptsize $\pm$ 0.0042} & 0.9919 {\scriptsize $\pm$ 0.0029} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 3.8453 {\scriptsize $\pm$ 0.4} & 3.4537 {\scriptsize $\pm$ 0.39} & \underline{0.8712} {\scriptsize $\pm$ 0.0092} & \underline{0.9624} {\scriptsize $\pm$ 0.0034} & \underline{0.9929} {\scriptsize $\pm$ 0.0028} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 4.7350 {\scriptsize $\pm$ 0.72} & 4.2302 {\scriptsize $\pm$ 0.64} & 0.8469 {\scriptsize $\pm$ 0.0082} & 0.9528 {\scriptsize $\pm$ 0.0032} & 0.9894 {\scriptsize $\pm$ 0.0024} \\
+ &  & Ggp-IRT & 5.3397 {\scriptsize $\pm$ 0.53} & 5.0315 {\scriptsize $\pm$ 0.52} & 0.8413 {\scriptsize $\pm$ 0.0088} & 0.9467 {\scriptsize $\pm$ 0.0042} & 0.9844 {\scriptsize $\pm$ 0.0054} \\
+ &  & Gp-IRT & 5.5732 {\scriptsize $\pm$ 0.54} & 5.2431 {\scriptsize $\pm$ 0.53} & 0.8328 {\scriptsize $\pm$ 0.01} & 0.9413 {\scriptsize $\pm$ 0.0056} & 0.9820 {\scriptsize $\pm$ 0.0071} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & \textbf{3.0936} {\scriptsize $\pm$ 0.22} & \textbf{2.7881} {\scriptsize $\pm$ 0.2} & 0.8538 {\scriptsize $\pm$ 0.0073} & 0.9547 {\scriptsize $\pm$ 0.003} & 0.9881 {\scriptsize $\pm$ 0.0032} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & \underline{3.2051} {\scriptsize $\pm$ 0.24} & \underline{2.8684} {\scriptsize $\pm$ 0.21} & 0.8514 {\scriptsize $\pm$ 0.0072} & 0.9536 {\scriptsize $\pm$ 0.003} & 0.9877 {\scriptsize $\pm$ 0.0033} \\
+\midrule
+15\% & 10 & LEGOgp-IRT & 4.6273 {\scriptsize $\pm$ 0.46} & 3.6777 {\scriptsize $\pm$ 0.36} & 0.8668 {\scriptsize $\pm$ 0.0071} & 0.9603 {\scriptsize $\pm$ 0.0029} & \underline{0.9934} {\scriptsize $\pm$ 0.0023} \\
+ &  & LEGOgp-IRT & 4.4120 {\scriptsize $\pm$ 0.37} & 3.4474 {\scriptsize $\pm$ 0.29} & \textbf{0.8820} {\scriptsize $\pm$ 0.0088} & \textbf{0.9645} {\scriptsize $\pm$ 0.004} & \textbf{0.9947} {\scriptsize $\pm$ 0.0012} \\
+ &  & LEGOgp-IRT & \textbf{3.8891} {\scriptsize $\pm$ 0.37} & \textbf{2.9839} {\scriptsize $\pm$ 0.28} & 0.8681 {\scriptsize $\pm$ 0.0046} & 0.9609 {\scriptsize $\pm$ 0.0017} & 0.9927 {\scriptsize $\pm$ 0.0019} \\
+ &  & LEGOp-IRT & 4.7452 {\scriptsize $\pm$ 0.48} & 3.7830 {\scriptsize $\pm$ 0.37} & 0.8641 {\scriptsize $\pm$ 0.0076} & 0.9591 {\scriptsize $\pm$ 0.0033} & \underline{0.9926} {\scriptsize $\pm$ 0.0029} \\
+ &  & LEGOp-IRT & 4.5043 {\scriptsize $\pm$ 0.38} & 3.5110 {\scriptsize $\pm$ 0.3} & \underline{0.8802} {\scriptsize $\pm$ 0.0086} & \underline{0.9640} {\scriptsize $\pm$ 0.004} & \underline{0.9941} {\scriptsize $\pm$ 0.0016} \\
+ &  & LEGOp-IRT & 4.3631 {\scriptsize $\pm$ 0.47} & 3.3770 {\scriptsize $\pm$ 0.38} & 0.8609 {\scriptsize $\pm$ 0.0056} & 0.9570 {\scriptsize $\pm$ 0.0024} & 0.9893 {\scriptsize $\pm$ 0.0042} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 4.2669 {\scriptsize $\pm$ 0.3} & 3.4300 {\scriptsize $\pm$ 0.24} & 0.8703 {\scriptsize $\pm$ 0.005} & 0.9625 {\scriptsize $\pm$ 0.0018} & \underline{0.9941} {\scriptsize $\pm$ 0.0013} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \underline{3.9163} {\scriptsize $\pm$ 0.3} & \underline{3.0144} {\scriptsize $\pm$ 0.23} & 0.8757 {\scriptsize $\pm$ 0.0047} & \underline{0.9645} {\scriptsize $\pm$ 0.002} & \underline{0.9944} {\scriptsize $\pm$ 0.0015} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \underline{4.0698} {\scriptsize $\pm$ 0.38} & \underline{3.1677} {\scriptsize $\pm$ 0.28} & 0.8601 {\scriptsize $\pm$ 0.0071} & 0.9578 {\scriptsize $\pm$ 0.0028} & 0.9918 {\scriptsize $\pm$ 0.0023} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 4.3306 {\scriptsize $\pm$ 0.29} & 3.4709 {\scriptsize $\pm$ 0.24} & 0.8660 {\scriptsize $\pm$ 0.0048} & 0.9612 {\scriptsize $\pm$ 0.0017} & \underline{0.9937} {\scriptsize $\pm$ 0.0015} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & \underline{3.9754} {\scriptsize $\pm$ 0.3} & \underline{3.0579} {\scriptsize $\pm$ 0.23} & 0.8748 {\scriptsize $\pm$ 0.0048} & \underline{0.9640} {\scriptsize $\pm$ 0.0019} & \underline{0.9941} {\scriptsize $\pm$ 0.0016} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 4.3655 {\scriptsize $\pm$ 0.46} & 3.4284 {\scriptsize $\pm$ 0.38} & 0.8560 {\scriptsize $\pm$ 0.0073} & 0.9562 {\scriptsize $\pm$ 0.0028} & 0.9902 {\scriptsize $\pm$ 0.0033} \\
+ &  & Ggp-IRT & 4.5964 {\scriptsize $\pm$ 0.42} & 3.6704 {\scriptsize $\pm$ 0.34} & 0.8443 {\scriptsize $\pm$ 0.0081} & 0.9471 {\scriptsize $\pm$ 0.0042} & 0.9902 {\scriptsize $\pm$ 0.0025} \\
+ &  & Gp-IRT & 4.7874 {\scriptsize $\pm$ 0.43} & 3.8090 {\scriptsize $\pm$ 0.35} & 0.8424 {\scriptsize $\pm$ 0.0082} & 0.9457 {\scriptsize $\pm$ 0.0042} & 0.9891 {\scriptsize $\pm$ 0.0031} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & \underline{4.3085} {\scriptsize $\pm$ 0.45} & \underline{3.2994} {\scriptsize $\pm$ 0.35} & 0.8517 {\scriptsize $\pm$ 0.0087} & 0.9516 {\scriptsize $\pm$ 0.0037} & 0.9895 {\scriptsize $\pm$ 0.0036} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & 4.5584 {\scriptsize $\pm$ 0.53} & 3.5229 {\scriptsize $\pm$ 0.44} & 0.8476 {\scriptsize $\pm$ 0.0088} & 0.9496 {\scriptsize $\pm$ 0.0038} & 0.9873 {\scriptsize $\pm$ 0.0051} \\
+\midrule
+15\% & 15 & LEGOgp-IRT & \underline{3.6994} {\scriptsize $\pm$ 0.39} & 2.8855 {\scriptsize $\pm$ 0.27} & 0.8871 {\scriptsize $\pm$ 0.0061} & 0.9699 {\scriptsize $\pm$ 0.0022} & \textbf{0.9962} {\scriptsize $\pm$ 0.00084} \\
+ &  & LEGOgp-IRT & \underline{3.6170} {\scriptsize $\pm$ 0.97} & \underline{2.5901} {\scriptsize $\pm$ 0.74} & \textbf{0.9117} {\scriptsize $\pm$ 0.024} & \textbf{0.9757} {\scriptsize $\pm$ 0.0092} & \underline{0.9938} {\scriptsize $\pm$ 0.0026} \\
+ &  & LEGOgp-IRT & 4.4632 {\scriptsize $\pm$ 0.83} & 3.1256 {\scriptsize $\pm$ 0.59} & 0.8866 {\scriptsize $\pm$ 0.016} & 0.9677 {\scriptsize $\pm$ 0.007} & 0.9829 {\scriptsize $\pm$ 0.011} \\
+ &  & LEGOp-IRT & 3.7514 {\scriptsize $\pm$ 0.38} & 2.9184 {\scriptsize $\pm$ 0.27} & 0.8862 {\scriptsize $\pm$ 0.0061} & 0.9696 {\scriptsize $\pm$ 0.0022} & \underline{0.9959} {\scriptsize $\pm$ 0.00097} \\
+ &  & LEGOp-IRT & \underline{4.1273} {\scriptsize $\pm$ 0.98} & \underline{2.8298} {\scriptsize $\pm$ 0.76} & \underline{0.9034} {\scriptsize $\pm$ 0.023} & \underline{0.9718} {\scriptsize $\pm$ 0.0086} & 0.9909 {\scriptsize $\pm$ 0.0045} \\
+ &  & LEGOp-IRT & 6.6341 {\scriptsize $\pm$ 0.54} & 4.4331 {\scriptsize $\pm$ 0.57} & 0.8522 {\scriptsize $\pm$ 0.019} & 0.9489 {\scriptsize $\pm$ 0.0075} & 0.9659 {\scriptsize $\pm$ 0.021} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \underline{3.5594} {\scriptsize $\pm$ 0.27} & 2.8781 {\scriptsize $\pm$ 0.21} & 0.8732 {\scriptsize $\pm$ 0.0074} & 0.9629 {\scriptsize $\pm$ 0.0034} & \underline{0.9954} {\scriptsize $\pm$ 0.0013} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \textbf{3.3680} {\scriptsize $\pm$ 0.38} & \textbf{2.5253} {\scriptsize $\pm$ 0.29} & \underline{0.8935} {\scriptsize $\pm$ 0.021} & \underline{0.9690} {\scriptsize $\pm$ 0.0085} & \underline{0.9921} {\scriptsize $\pm$ 0.0049} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \underline{3.4346} {\scriptsize $\pm$ 0.54} & \underline{2.6389} {\scriptsize $\pm$ 0.3} & 0.8900 {\scriptsize $\pm$ 0.018} & \underline{0.9729} {\scriptsize $\pm$ 0.006} & 0.9863 {\scriptsize $\pm$ 0.0088} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & \underline{3.5744} {\scriptsize $\pm$ 0.28} & 2.8827 {\scriptsize $\pm$ 0.21} & 0.8724 {\scriptsize $\pm$ 0.0076} & 0.9626 {\scriptsize $\pm$ 0.0034} & \underline{0.9952} {\scriptsize $\pm$ 0.0014} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & \underline{3.4771} {\scriptsize $\pm$ 0.33} & \underline{2.5705} {\scriptsize $\pm$ 0.23} & 0.8853 {\scriptsize $\pm$ 0.023} & 0.9647 {\scriptsize $\pm$ 0.01} & \underline{0.9913} {\scriptsize $\pm$ 0.0052} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 4.2209 {\scriptsize $\pm$ 0.66} & 3.2646 {\scriptsize $\pm$ 0.38} & 0.8770 {\scriptsize $\pm$ 0.023} & 0.9658 {\scriptsize $\pm$ 0.0077} & 0.9813 {\scriptsize $\pm$ 0.012} \\
+ &  & Ggp-IRT & 4.9163 {\scriptsize $\pm$ 0.57} & 3.5532 {\scriptsize $\pm$ 0.36} & 0.8675 {\scriptsize $\pm$ 0.0086} & 0.9609 {\scriptsize $\pm$ 0.0035} & 0.9875 {\scriptsize $\pm$ 0.0042} \\
+ &  & Gp-IRT & 5.3116 {\scriptsize $\pm$ 0.67} & 3.8207 {\scriptsize $\pm$ 0.43} & 0.8581 {\scriptsize $\pm$ 0.011} & 0.9556 {\scriptsize $\pm$ 0.0053} & 0.9837 {\scriptsize $\pm$ 0.0072} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & \underline{3.6361} {\scriptsize $\pm$ 0.4} & \underline{2.6746} {\scriptsize $\pm$ 0.26} & 0.8612 {\scriptsize $\pm$ 0.0083} & 0.9565 {\scriptsize $\pm$ 0.0033} & 0.9918 {\scriptsize $\pm$ 0.0021} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & 3.8260 {\scriptsize $\pm$ 0.41} & 2.8305 {\scriptsize $\pm$ 0.28} & 0.8593 {\scriptsize $\pm$ 0.008} & 0.9556 {\scriptsize $\pm$ 0.0031} & 0.9909 {\scriptsize $\pm$ 0.0025} \\
+\midrule
+15\% & 20 & LEGOgp-IRT & \underline{1.7170} {\scriptsize $\pm$ 0.66} & \textbf{1.4583} {\scriptsize $\pm$ 0.52} & \underline{0.9159} {\scriptsize $\pm$ 0.02} & \underline{0.9794} {\scriptsize $\pm$ 0.0059} & \textbf{0.9973} {\scriptsize $\pm$ 0.0016} \\
+ &  & LEGOgp-IRT & 2.5433 {\scriptsize $\pm$ 0.43} & 2.3564 {\scriptsize $\pm$ 0.42} & 0.9065 {\scriptsize $\pm$ 0.013} & 0.9763 {\scriptsize $\pm$ 0.005} & \underline{0.9943} {\scriptsize $\pm$ 0.0034} \\
+ &  & LEGOgp-IRT & 3.6476 {\scriptsize $\pm$ 0.27} & 3.3555 {\scriptsize $\pm$ 0.35} & 0.8612 {\scriptsize $\pm$ 0.031} & 0.9485 {\scriptsize $\pm$ 0.019} & 0.9752 {\scriptsize $\pm$ 0.017} \\
+ &  & LEGOp-IRT & \underline{2.0143} {\scriptsize $\pm$ 0.63} & \underline{1.6066} {\scriptsize $\pm$ 0.42} & \underline{0.9115} {\scriptsize $\pm$ 0.018} & 0.9768 {\scriptsize $\pm$ 0.0057} & \underline{0.9953} {\scriptsize $\pm$ 0.0028} \\
+ &  & LEGOp-IRT & 2.7303 {\scriptsize $\pm$ 0.9} & 2.5559 {\scriptsize $\pm$ 0.88} & 0.9034 {\scriptsize $\pm$ 0.013} & 0.9762 {\scriptsize $\pm$ 0.0056} & 0.9941 {\scriptsize $\pm$ 0.0027} \\
+ &  & LEGOp-IRT & 4.9278 {\scriptsize $\pm$ 0.75} & 4.3054 {\scriptsize $\pm$ 0.6} & 0.8448 {\scriptsize $\pm$ 0.029} & 0.9414 {\scriptsize $\pm$ 0.015} & 0.9555 {\scriptsize $\pm$ 0.029} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 2.9277 {\scriptsize $\pm$ 0.59} & 2.6400 {\scriptsize $\pm$ 0.59} & 0.8814 {\scriptsize $\pm$ 0.029} & 0.9673 {\scriptsize $\pm$ 0.01} & \underline{0.9948} {\scriptsize $\pm$ 0.0033} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & \textbf{1.6155} {\scriptsize $\pm$ 0.24} & \underline{1.5205} {\scriptsize $\pm$ 0.22} & \textbf{0.9285} {\scriptsize $\pm$ 0.014} & \textbf{0.9840} {\scriptsize $\pm$ 0.0047} & \underline{0.9972} {\scriptsize $\pm$ 0.0016} \\
+ &  & \$\textbackslash\{\}beta\$ gp-IRT & 2.1633 {\scriptsize $\pm$ 0.2} & 1.9954 {\scriptsize $\pm$ 0.25} & 0.9037 {\scriptsize $\pm$ 0.013} & 0.9766 {\scriptsize $\pm$ 0.0045} & 0.9923 {\scriptsize $\pm$ 0.0044} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 3.7432 {\scriptsize $\pm$ 0.72} & 3.2684 {\scriptsize $\pm$ 0.68} & 0.8764 {\scriptsize $\pm$ 0.028} & 0.9642 {\scriptsize $\pm$ 0.011} & 0.9914 {\scriptsize $\pm$ 0.0057} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 1.9868 {\scriptsize $\pm$ 0.37} & 1.9104 {\scriptsize $\pm$ 0.38} & \underline{0.9198} {\scriptsize $\pm$ 0.018} & \underline{0.9801} {\scriptsize $\pm$ 0.0068} & \underline{0.9967} {\scriptsize $\pm$ 0.0018} \\
+ &  & \$\textbackslash\{\}beta\$ p-IRT & 2.9603 {\scriptsize $\pm$ 0.5} & 2.7601 {\scriptsize $\pm$ 0.54} & 0.8923 {\scriptsize $\pm$ 0.014} & 0.9723 {\scriptsize $\pm$ 0.0055} & 0.9897 {\scriptsize $\pm$ 0.0058} \\
+ &  & Ggp-IRT & 5.4090 {\scriptsize $\pm$ 0.51} & 5.2337 {\scriptsize $\pm$ 0.51} & 0.8693 {\scriptsize $\pm$ 0.031} & 0.9582 {\scriptsize $\pm$ 0.014} & 0.9609 {\scriptsize $\pm$ 0.027} \\
+ &  & Gp-IRT & 6.9266 {\scriptsize $\pm$ 0.36} & 6.3349 {\scriptsize $\pm$ 0.097} & 0.8063 {\scriptsize $\pm$ 0.044} & 0.9221 {\scriptsize $\pm$ 0.025} & 0.9351 {\scriptsize $\pm$ 0.043} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$gp-IRT & 2.6157 {\scriptsize $\pm$ 0.49} & 2.3376 {\scriptsize $\pm$ 0.47} & 0.8780 {\scriptsize $\pm$ 0.014} & 0.9658 {\scriptsize $\pm$ 0.0052} & 0.9872 {\scriptsize $\pm$ 0.0081} \\
+ &  & \$\textbackslash\{\}beta\textasciicircum{}3\$p-IRT & 3.7805 {\scriptsize $\pm$ 1.1} & 3.2582 {\scriptsize $\pm$ 1.1} & 0.8645 {\scriptsize $\pm$ 0.012} & 0.9573 {\scriptsize $\pm$ 0.0041} & 0.9834 {\scriptsize $\pm$ 0.0085} \\
+\end{longtable}
