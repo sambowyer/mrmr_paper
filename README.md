@@ -1,4 +1,4 @@
-# Code for "Efficient Benchmarking is Just Feature Selection and Multiple Regression"
+# Code for "Efficient Benchmarking is Just Feature Selection and Multiple Regression" (Neurips 2026)
 
 Paper: https://arxiv.org/abs/2605.25773
 
@@ -62,13 +62,16 @@ The tales of full results can be found in the `full_tables/` directory, and are 
 If you use this repository in your work, please cite the accompanying paper:
 
 ```bibtex
-@article{bowyer2026efficientbenchmarkingjustfeature,
-      title={Efficient Benchmarking Is Just Feature Selection and Multiple Regression}, 
-      author={Sam Bowyer and Acyr Locatelli and Kris Cao},
-      year={2026},
-      eprint={2605.25773},
-      archivePrefix={arXiv},
-      primaryClass={stat.ML},
-      url={https://arxiv.org/abs/2605.25773}, 
+@inproceedings{bowyer2026efficientbenchmarkingjustfeature,
+  title     = {Efficient Benchmarking Is Just Feature Selection and Multiple Regression},
+  author    = {Bowyer, Sam and Locatelli, Acyr and Cao, Kris},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {39},
+  year      = {2026},
+  note      = {Evaluations and Datasets Track},
+  eprint    = {2605.25773},
+  archivePrefix = {arXiv},
+  primaryClass  = {stat.ML},
+  url       = {https://arxiv.org/abs/2605.25773},
 }
 ```
